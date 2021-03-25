@@ -16,7 +16,7 @@ namespace Bank
             this.SumTableAdapter.Fill(this.BDDataSet.Sum);
 
 
-            this.reportViewer1.RefreshReport();
+            this.Rep1.RefreshReport();
         }
 
         private void кліентиToolStripMenuItem_Click(object sender, EventArgs e)

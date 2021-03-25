@@ -32,19 +32,17 @@ namespace Bank
             this.components = new System.ComponentModel.Container();
             this.gb1 = new System.Windows.Forms.GroupBox();
             this.кліентиDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.кліентиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bDDataSet = new Bank.BDDataSet();
-            this.кліентиTableAdapter = new Bank.BDDataSetTableAdapters.КліентиTableAdapter();
-            this.tableAdapterManager = new Bank.BDDataSetTableAdapters.TableAdapterManager();
             this.gb2 = new System.Windows.Forms.GroupBox();
             this.btCli = new System.Windows.Forms.Button();
             this.btUpdate = new System.Windows.Forms.Button();
@@ -69,14 +67,13 @@ namespace Bank
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.вкладиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.вкладиTableAdapter = new Bank.BDDataSetTableAdapters.ВкладиTableAdapter();
-            this.вкладиDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb3 = new System.Windows.Forms.GroupBox();
+            this.вкладиDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.вкладиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gb4 = new System.Windows.Forms.GroupBox();
             this.btDelVkl = new System.Windows.Forms.Button();
             this.btUpdateVkl = new System.Windows.Forms.Button();
@@ -100,16 +97,18 @@ namespace Bank
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.банкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.звітиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.доходиКліентівToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вкладиTableAdapter = new Bank.BDDataSetTableAdapters.ВкладиTableAdapter();
+            this.tableAdapterManager = new Bank.BDDataSetTableAdapters.TableAdapterManager();
+            this.кліентиTableAdapter = new Bank.BDDataSetTableAdapters.КліентиTableAdapter();
             this.gb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.кліентиDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.кліентиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
             this.gb2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.вкладиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.вкладиDataGridView)).BeginInit();
             this.gb3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.вкладиDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.вкладиBindingSource)).BeginInit();
             this.gb4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -120,8 +119,9 @@ namespace Bank
             this.gb1.Controls.Add(this.кліентиDataGridView);
             this.gb1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gb1.Location = new System.Drawing.Point(416, 30);
+            this.gb1.MaximumSize = new System.Drawing.Size(983, 317);
             this.gb1.Name = "gb1";
-            this.gb1.Size = new System.Drawing.Size(965, 175);
+            this.gb1.Size = new System.Drawing.Size(983, 317);
             this.gb1.TabIndex = 0;
             this.gb1.TabStop = false;
             this.gb1.Text = "Кліенти";
@@ -131,74 +131,76 @@ namespace Bank
             this.кліентиDataGridView.AutoGenerateColumns = false;
             this.кліентиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.кліентиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19});
             this.кліентиDataGridView.DataSource = this.кліентиBindingSource;
-            this.кліентиDataGridView.Location = new System.Drawing.Point(24, 19);
+            this.кліентиDataGridView.Location = new System.Drawing.Point(13, 35);
             this.кліентиDataGridView.Name = "кліентиDataGridView";
-            this.кліентиDataGridView.Size = new System.Drawing.Size(936, 128);
+            this.кліентиDataGridView.Size = new System.Drawing.Size(952, 171);
             this.кліентиDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ІД";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ІД";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "ПІБ";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ПІБ";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Адрс";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Адрс";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Стать";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Стать";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Телефон";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Телефон";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ІД";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ІД";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Дата народження";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Дата народження";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Менеджер";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Менеджер";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ПІБ";
+            this.dataGridViewTextBoxColumn7.HeaderText = "ПІБ";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
-            // dataGridViewTextBoxColumn8
+            // dataGridViewTextBoxColumn11
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "№ вклада";
-            this.dataGridViewTextBoxColumn8.HeaderText = "№ вклада";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Адрс";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Адрс";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
-            // dataGridViewTextBoxColumn9
+            // dataGridViewTextBoxColumn14
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Сума вклада";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Сума вклада";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Стать";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Стать";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Телефон";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Телефон";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Дата_народження";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Дата_народження";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Менеджер";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Менеджер";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "№_вклада";
+            this.dataGridViewTextBoxColumn18.HeaderText = "№_вклада";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "Сума_вклада";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Сума_вклада";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.Width = 131;
             // 
             // кліентиBindingSource
             // 
@@ -209,19 +211,6 @@ namespace Bank
             // 
             this.bDDataSet.DataSetName = "BDDataSet";
             this.bDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // кліентиTableAdapter
-            // 
-            this.кліентиTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Bank.BDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.ВідділеняTableAdapter = null;
-            this.tableAdapterManager.ВкладиTableAdapter = null;
-            this.tableAdapterManager.КліентиTableAdapter = this.кліентиTableAdapter;
-            this.tableAdapterManager.ПрацівникиTableAdapter = null;
             // 
             // gb2
             // 
@@ -309,7 +298,7 @@ namespace Bank
             // 
             // textBox12
             // 
-            this.textBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.кліентиBindingSource, "Сума вклада", true));
+            this.textBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.кліентиBindingSource, "Сума_вклада", true));
             this.textBox12.Location = new System.Drawing.Point(115, 307);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(101, 26);
@@ -317,7 +306,7 @@ namespace Bank
             // 
             // textBox11
             // 
-            this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.кліентиBindingSource, "№ вклада", true));
+            this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.кліентиBindingSource, "№_вклада", true));
             this.textBox11.Location = new System.Drawing.Point(99, 276);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(58, 26);
@@ -333,7 +322,7 @@ namespace Bank
             // 
             // textBox9
             // 
-            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.кліентиBindingSource, "Дата народження", true));
+            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.кліентиBindingSource, "Дата_народження", true));
             this.textBox9.Location = new System.Drawing.Point(141, 216);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(145, 26);
@@ -469,54 +458,6 @@ namespace Bank
             this.label18.TabIndex = 0;
             this.label18.Text = "ІД";
             // 
-            // вкладиBindingSource
-            // 
-            this.вкладиBindingSource.DataMember = "Вклади";
-            this.вкладиBindingSource.DataSource = this.bDDataSet;
-            // 
-            // вкладиTableAdapter
-            // 
-            this.вкладиTableAdapter.ClearBeforeFill = true;
-            // 
-            // вкладиDataGridView
-            // 
-            this.вкладиDataGridView.AutoGenerateColumns = false;
-            this.вкладиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.вкладиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13});
-            this.вкладиDataGridView.DataSource = this.вкладиBindingSource;
-            this.вкладиDataGridView.Location = new System.Drawing.Point(24, 28);
-            this.вкладиDataGridView.Name = "вкладиDataGridView";
-            this.вкладиDataGridView.Size = new System.Drawing.Size(433, 149);
-            this.вкладиDataGridView.TabIndex = 12;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "№ вклада";
-            this.dataGridViewTextBoxColumn10.HeaderText = "№ вклада";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Відсоток";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Відсоток";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Термін вкладу місяці";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Термін вкладу місяці";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Термін вкладу дні";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Термін вкладу дні";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
             // gb3
             // 
             this.gb3.BackColor = System.Drawing.Color.DarkOrange;
@@ -524,10 +465,58 @@ namespace Bank
             this.gb3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gb3.Location = new System.Drawing.Point(416, 550);
             this.gb3.Name = "gb3";
-            this.gb3.Size = new System.Drawing.Size(468, 188);
+            this.gb3.Size = new System.Drawing.Size(644, 311);
             this.gb3.TabIndex = 13;
             this.gb3.TabStop = false;
             this.gb3.Text = "Вклади";
+            // 
+            // вкладиDataGridView
+            // 
+            this.вкладиDataGridView.AutoGenerateColumns = false;
+            this.вкладиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.вкладиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.вкладиDataGridView.DataSource = this.вкладиBindingSource;
+            this.вкладиDataGridView.Location = new System.Drawing.Point(24, 40);
+            this.вкладиDataGridView.Name = "вкладиDataGridView";
+            this.вкладиDataGridView.Size = new System.Drawing.Size(612, 209);
+            this.вкладиDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "№_вклада";
+            this.dataGridViewTextBoxColumn1.HeaderText = "№_вклада";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Термін_вкладу_місяці";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Термін_вкладу_місяці";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 194;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Термін_вкладу_дні";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Термін_вкладу_дні";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 171;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Відсоток";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Відсоток";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // вкладиBindingSource
+            // 
+            this.вкладиBindingSource.DataMember = "Вклади";
+            this.вкладиBindingSource.DataSource = this.bDDataSet;
             // 
             // gb4
             // 
@@ -605,15 +594,15 @@ namespace Bank
             // 
             // textBox13
             // 
-            this.textBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Термін вкладу дні", true));
-            this.textBox13.Location = new System.Drawing.Point(191, 182);
+            this.textBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Відсоток", true));
+            this.textBox13.Location = new System.Drawing.Point(191, 186);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 26);
             this.textBox13.TabIndex = 7;
             // 
             // textBox3
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Термін вкладу місяці", true));
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Термін_вкладу_дні", true));
             this.textBox3.Location = new System.Drawing.Point(191, 141);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 26);
@@ -621,7 +610,7 @@ namespace Bank
             // 
             // textBox2
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Відсоток", true));
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Термін_вкладу_місяці", true));
             this.textBox2.Location = new System.Drawing.Point(144, 109);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 26);
@@ -629,7 +618,7 @@ namespace Bank
             // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "№ вклада", true));
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "№_вклада", true));
             this.textBox1.Location = new System.Drawing.Point(115, 63);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 26);
@@ -665,7 +654,7 @@ namespace Bank
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 63);
+            this.label1.Location = new System.Drawing.Point(23, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 19);
             this.label1.TabIndex = 0;
@@ -704,7 +693,7 @@ namespace Bank
             // btSearchVkl
             // 
             this.btSearchVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSearchVkl.Location = new System.Drawing.Point(429, 798);
+            this.btSearchVkl.Location = new System.Drawing.Point(440, 883);
             this.btSearchVkl.Name = "btSearchVkl";
             this.btSearchVkl.Size = new System.Drawing.Size(99, 46);
             this.btSearchVkl.TabIndex = 18;
@@ -715,7 +704,7 @@ namespace Bank
             // txSearhVkl
             // 
             this.txSearhVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txSearhVkl.Location = new System.Drawing.Point(568, 805);
+            this.txSearhVkl.Location = new System.Drawing.Point(557, 894);
             this.txSearhVkl.Name = "txSearhVkl";
             this.txSearhVkl.Size = new System.Drawing.Size(361, 26);
             this.txSearhVkl.TabIndex = 19;
@@ -735,11 +724,10 @@ namespace Bank
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.банкToolStripMenuItem,
-            this.звітиToolStripMenuItem,
-            this.вихідToolStripMenuItem});
+            this.звітиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1392, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1409, 29);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -762,14 +750,6 @@ namespace Bank
             this.звітиToolStripMenuItem.Text = "Звіти";
             this.звітиToolStripMenuItem.Click += new System.EventHandler(this.звітиToolStripMenuItem_Click);
             // 
-            // вихідToolStripMenuItem
-            // 
-            this.вихідToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
-            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(60, 25);
-            this.вихідToolStripMenuItem.Text = "Вихід";
-            this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
-            // 
             // доходиКліентівToolStripMenuItem
             // 
             this.доходиКліентівToolStripMenuItem.Name = "доходиКліентівToolStripMenuItem";
@@ -777,12 +757,29 @@ namespace Bank
             this.доходиКліентівToolStripMenuItem.Text = "Доходи кліентів";
             this.доходиКліентівToolStripMenuItem.Click += new System.EventHandler(this.доходиКліентівToolStripMenuItem_Click);
             // 
+            // вкладиTableAdapter
+            // 
+            this.вкладиTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = Bank.BDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.ВідділеняTableAdapter = null;
+            this.tableAdapterManager.ВкладиTableAdapter = this.вкладиTableAdapter;
+            this.tableAdapterManager.КліентиTableAdapter = this.кліентиTableAdapter;
+            this.tableAdapterManager.ПрацівникиTableAdapter = null;
+            // 
+            // кліентиTableAdapter
+            // 
+            this.кліентиTableAdapter.ClearBeforeFill = true;
+            // 
             // fClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1392, 958);
+            this.ClientSize = new System.Drawing.Size(1409, 958);
             this.Controls.Add(this.btRefreshVkl);
             this.Controls.Add(this.txSearhVkl);
             this.Controls.Add(this.btSearchVkl);
@@ -795,7 +792,7 @@ namespace Bank
             this.Controls.Add(this.gb1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1408, 997);
+            this.MaximumSize = new System.Drawing.Size(1425, 997);
             this.Name = "fClients";
             this.Text = "Кліенти і вклади";
             this.Load += new System.EventHandler(this.fClients_Load);
@@ -805,9 +802,9 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).EndInit();
             this.gb2.ResumeLayout(false);
             this.gb2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.вкладиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.вкладиDataGridView)).EndInit();
             this.gb3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.вкладиDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.вкладиBindingSource)).EndInit();
             this.gb4.ResumeLayout(false);
             this.gb4.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -821,19 +818,7 @@ namespace Bank
 
         private System.Windows.Forms.GroupBox gb1;
         private BDDataSet bDDataSet;
-        private System.Windows.Forms.BindingSource кліентиBindingSource;
-        private BDDataSetTableAdapters.КліентиTableAdapter кліентиTableAdapter;
-        private BDDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView кліентиDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+
         private System.Windows.Forms.GroupBox gb2;
         private System.Windows.Forms.Button btCli;
         private System.Windows.Forms.Button btUpdate;
@@ -858,13 +843,7 @@ namespace Bank
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.BindingSource вкладиBindingSource;
-        private BDDataSetTableAdapters.ВкладиTableAdapter вкладиTableAdapter;
-        private System.Windows.Forms.DataGridView вкладиDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+
         private System.Windows.Forms.GroupBox gb3;
         private System.Windows.Forms.GroupBox gb4;
         private System.Windows.Forms.Button btDelVkl;
@@ -889,7 +868,26 @@ namespace Bank
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem банкToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem звітиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вихідToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem доходиКліентівToolStripMenuItem;
+        private System.Windows.Forms.BindingSource вкладиBindingSource;
+        private BDDataSetTableAdapters.ВкладиTableAdapter вкладиTableAdapter;
+        private BDDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView вкладиDataGridView;
+        private BDDataSetTableAdapters.КліентиTableAdapter кліентиTableAdapter;
+        private System.Windows.Forms.BindingSource кліентиBindingSource;
+        private System.Windows.Forms.DataGridView кліентиDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

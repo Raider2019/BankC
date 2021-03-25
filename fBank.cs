@@ -12,12 +12,14 @@ namespace Bank
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Відділеня". При необходимости она может быть перемещена или удалена.
+            this.відділеняTableAdapter.Fill(this.bDDataSet.Відділеня);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Кліенти". При необходимости она может быть перемещена или удалена.
 
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Працівники". При необходимости она может быть перемещена или удалена.
             this.працівникиTableAdapter.Fill(this.bDDataSet.Працівники);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Відділеня". При необходимости она может быть перемещена или удалена.
-            this.відділеняTableAdapter.Fill(this.bDDataSet.Відділеня);
+           
+    
 
         }
 
@@ -87,10 +89,10 @@ namespace Bank
 
         private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fGeneral f = new fGeneral();
+          ;
             if (MessageBox.Show("Припинити роботу?", "Банк", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                this.Hide();
-            f.Show();
+                Application.Exit();
+           
         }
 
         private void Refresh_Click(object sender, EventArgs e)
@@ -113,7 +115,7 @@ namespace Bank
 
         private void btnSearchWorker_Click(object sender, EventArgs e)
         {
-            працівникиBindingSource.Filter = "Імя LIKE '" + txbSearchWorker.Text + "%'";
+            працівникиBindingSource.Filter = "ПІБ LIKE '" + txbSearchWorker.Text + "%'";
         }
 
         private void btnRefreshWorker_Click(object sender, EventArgs e)
@@ -135,6 +137,14 @@ namespace Bank
             fClients f = new fClients();
             f.Show();
             this.Hide();
+        }
+
+        private void відділеняBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.відділеняBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bDDataSet);
+
         }
     }
 }

@@ -30,12 +30,12 @@ namespace Bank
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.SumBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BDDataSet = new Bank.BDDataSet();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.кліентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.Rep1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SumTableAdapter = new Bank.BDDataSetTableAdapters.SumTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.SumBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BDDataSet)).BeginInit();
@@ -58,7 +58,7 @@ namespace Bank
             this.кліентиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(916, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(817, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,18 +70,17 @@ namespace Bank
             this.кліентиToolStripMenuItem.Text = "Кліенти";
             this.кліентиToolStripMenuItem.Click += new System.EventHandler(this.кліентиToolStripMenuItem_Click);
             // 
-            // reportViewer1
+            // Rep1
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "Suma";
-            reportDataSource1.Value = this.SumBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Bank.Suma.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 29);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(916, 450);
-            this.reportViewer1.TabIndex = 1;
+            reportDataSource4.Name = "Suma";
+            reportDataSource4.Value = this.SumBindingSource;
+            this.Rep1.LocalReport.DataSources.Add(reportDataSource4);
+            this.Rep1.LocalReport.ReportEmbeddedResource = "Bank.ReportsSuma.rdlc";
+            this.Rep1.Location = new System.Drawing.Point(0, 29);
+            this.Rep1.Name = "Rep1";
+            this.Rep1.ServerReport.BearerToken = null;
+            this.Rep1.Size = new System.Drawing.Size(916, 452);
+            this.Rep1.TabIndex = 1;
             // 
             // SumTableAdapter
             // 
@@ -92,11 +91,12 @@ namespace Bank
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(916, 479);
-            this.Controls.Add(this.reportViewer1);
+            this.ClientSize = new System.Drawing.Size(817, 479);
+            this.Controls.Add(this.Rep1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(833, 518);
             this.Name = "ReportSuma";
             this.Text = "Заіт доходи кіентів";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -112,7 +112,7 @@ namespace Bank
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer Rep1;
         private System.Windows.Forms.ToolStripMenuItem кліентиToolStripMenuItem;
         private System.Windows.Forms.BindingSource SumBindingSource;
         private BDDataSet BDDataSet;

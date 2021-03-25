@@ -30,7 +30,6 @@ namespace Bank
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grb1 = new System.Windows.Forms.GroupBox();
             this.btDelOtd = new System.Windows.Forms.Button();
             this.btUpdate = new System.Windows.Forms.Button();
@@ -38,8 +37,6 @@ namespace Bank
             this.btAddOtd = new System.Windows.Forms.Button();
             this.btPrev = new System.Windows.Forms.Button();
             this.txb4 = new System.Windows.Forms.TextBox();
-            this.відділеняBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bDDataSet = new Bank.BDDataSet();
             this.txb3 = new System.Windows.Forms.TextBox();
             this.txb2 = new System.Windows.Forms.TextBox();
             this.txb1 = new System.Windows.Forms.TextBox();
@@ -48,17 +45,8 @@ namespace Bank
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grb2 = new System.Windows.Forms.GroupBox();
-            this.dg1 = new System.Windows.Forms.DataGridView();
-            this.відділенняDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.адресDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.номерDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.емайлDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.кліентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grb3 = new System.Windows.Forms.GroupBox();
             this.txb11 = new System.Windows.Forms.TextBox();
-            this.працівникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label12 = new System.Windows.Forms.Label();
             this.txb12 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -80,33 +68,44 @@ namespace Bank
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.grb4 = new System.Windows.Forms.GroupBox();
+            this.txbSearchWorker = new System.Windows.Forms.TextBox();
+            this.txbSearchOtd = new System.Windows.Forms.TextBox();
+            this.WRefresh = new System.Windows.Forms.Button();
+            this.btnSearchOtd = new System.Windows.Forms.Button();
+            this.btnRefreshWorker = new System.Windows.Forms.Button();
+            this.btnSearchWorker = new System.Windows.Forms.Button();
+            this.tableAdapterManager = new Bank.BDDataSetTableAdapters.TableAdapterManager();
+            this.відділеняTableAdapter = new Bank.BDDataSetTableAdapters.ВідділеняTableAdapter();
+            this.кліентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.bDDataSet = new Bank.BDDataSet();
+            this.відділеняBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.працівникиTableAdapter = new Bank.BDDataSetTableAdapters.ПрацівникиTableAdapter();
+            this.відділеняDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.працівникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.працівникиDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txbSearchWorker = new System.Windows.Forms.TextBox();
-            this.txbSearchOtd = new System.Windows.Forms.TextBox();
-            this.відділеняTableAdapter = new Bank.BDDataSetTableAdapters.ВідділеняTableAdapter();
-            this.працівникиTableAdapter = new Bank.BDDataSetTableAdapters.ПрацівникиTableAdapter();
-            this.WRefresh = new System.Windows.Forms.Button();
-            this.tableAdapterManager = new Bank.BDDataSetTableAdapters.TableAdapterManager();
-            this.btnSearchOtd = new System.Windows.Forms.Button();
-            this.btnRefreshWorker = new System.Windows.Forms.Button();
-            this.btnSearchWorker = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grb1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
             this.grb2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dg1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.grb3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).BeginInit();
             this.grb4.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.відділеняDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,16 +192,6 @@ namespace Bank
             this.txb4.Size = new System.Drawing.Size(176, 26);
             this.txb4.TabIndex = 7;
             // 
-            // відділеняBindingSource
-            // 
-            this.відділеняBindingSource.DataMember = "Відділеня";
-            this.відділеняBindingSource.DataSource = this.bDDataSet;
-            // 
-            // bDDataSet
-            // 
-            this.bDDataSet.DataSetName = "BDDataSet";
-            this.bDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // txb3
             // 
             this.txb3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.відділеняBindingSource, "Номер", true));
@@ -221,7 +210,7 @@ namespace Bank
             // 
             // txb1
             // 
-            this.txb1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.відділеняBindingSource, "№ відділення", true));
+            this.txb1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.відділеняBindingSource, "№_відділення", true));
             this.txb1.Location = new System.Drawing.Point(127, 45);
             this.txb1.Name = "txb1";
             this.txb1.Size = new System.Drawing.Size(176, 26);
@@ -270,97 +259,15 @@ namespace Bank
             // grb2
             // 
             this.grb2.BackColor = System.Drawing.Color.DarkOrange;
-            this.grb2.Controls.Add(this.dg1);
+            this.grb2.Controls.Add(this.відділеняDataGridView);
             this.grb2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grb2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.grb2.Location = new System.Drawing.Point(429, 46);
             this.grb2.Name = "grb2";
-            this.grb2.Size = new System.Drawing.Size(652, 299);
+            this.grb2.Size = new System.Drawing.Size(652, 310);
             this.grb2.TabIndex = 1;
             this.grb2.TabStop = false;
             this.grb2.Text = " Відділеня";
-            // 
-            // dg1
-            // 
-            this.dg1.AutoGenerateColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.відділенняDataGridViewTextBoxColumn,
-            this.адресDataGridViewTextBoxColumn,
-            this.номерDataGridViewTextBoxColumn,
-            this.емайлDataGridViewTextBoxColumn});
-            this.dg1.DataSource = this.відділеняBindingSource;
-            this.dg1.Location = new System.Drawing.Point(17, 19);
-            this.dg1.Name = "dg1";
-            this.dg1.Size = new System.Drawing.Size(593, 242);
-            this.dg1.TabIndex = 0;
-            // 
-            // відділенняDataGridViewTextBoxColumn
-            // 
-            this.відділенняDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.відділенняDataGridViewTextBoxColumn.DataPropertyName = "№ відділення";
-            this.відділенняDataGridViewTextBoxColumn.HeaderText = "№ відділення";
-            this.відділенняDataGridViewTextBoxColumn.Name = "відділенняDataGridViewTextBoxColumn";
-            this.відділенняDataGridViewTextBoxColumn.Width = 131;
-            // 
-            // адресDataGridViewTextBoxColumn
-            // 
-            this.адресDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.адресDataGridViewTextBoxColumn.DataPropertyName = "Адрес";
-            this.адресDataGridViewTextBoxColumn.HeaderText = "Адрес";
-            this.адресDataGridViewTextBoxColumn.Name = "адресDataGridViewTextBoxColumn";
-            this.адресDataGridViewTextBoxColumn.Width = 76;
-            // 
-            // номерDataGridViewTextBoxColumn
-            // 
-            this.номерDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.номерDataGridViewTextBoxColumn.DataPropertyName = "Номер";
-            this.номерDataGridViewTextBoxColumn.HeaderText = "Номер";
-            this.номерDataGridViewTextBoxColumn.Name = "номерDataGridViewTextBoxColumn";
-            this.номерDataGridViewTextBoxColumn.Width = 81;
-            // 
-            // емайлDataGridViewTextBoxColumn
-            // 
-            this.емайлDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.емайлDataGridViewTextBoxColumn.DataPropertyName = "Емайл";
-            this.емайлDataGridViewTextBoxColumn.HeaderText = "Емайл";
-            this.емайлDataGridViewTextBoxColumn.Name = "емайлDataGridViewTextBoxColumn";
-            this.емайлDataGridViewTextBoxColumn.Width = 81;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.кліентиToolStripMenuItem,
-            this.вихідToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1320, 29);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // кліентиToolStripMenuItem
-            // 
-            this.кліентиToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.кліентиToolStripMenuItem.Name = "кліентиToolStripMenuItem";
-            this.кліентиToolStripMenuItem.Size = new System.Drawing.Size(76, 25);
-            this.кліентиToolStripMenuItem.Text = "Кліенти";
-            this.кліентиToolStripMenuItem.Click += new System.EventHandler(this.кліентиToolStripMenuItem_Click);
-            // 
-            // вихідToolStripMenuItem
-            // 
-            this.вихідToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
-            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(60, 25);
-            this.вихідToolStripMenuItem.Text = "Вихід";
-            this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
             // grb3
             // 
@@ -402,11 +309,6 @@ namespace Bank
             this.txb11.Name = "txb11";
             this.txb11.Size = new System.Drawing.Size(176, 26);
             this.txb11.TabIndex = 20;
-            // 
-            // працівникиBindingSource
-            // 
-            this.працівникиBindingSource.DataMember = "Працівники";
-            this.працівникиBindingSource.DataSource = this.bDDataSet;
             // 
             // label12
             // 
@@ -532,7 +434,7 @@ namespace Bank
             // 
             // txb7
             // 
-            this.txb7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.працівникиBindingSource, "Дата народження", true));
+            this.txb7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.працівникиBindingSource, "Дата_народження", true));
             this.txb7.Location = new System.Drawing.Point(152, 121);
             this.txb7.Name = "txb7";
             this.txb7.Size = new System.Drawing.Size(176, 26);
@@ -548,7 +450,7 @@ namespace Bank
             // 
             // txb5
             // 
-            this.txb5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.працівникиBindingSource, "№ працівника", true));
+            this.txb5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.працівникиBindingSource, "№_працівника", true));
             this.txb5.Location = new System.Drawing.Point(127, 45);
             this.txb5.Name = "txb5";
             this.txb5.Size = new System.Drawing.Size(176, 26);
@@ -602,84 +504,15 @@ namespace Bank
             this.grb4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.grb4.Location = new System.Drawing.Point(429, 407);
             this.grb4.Name = "grb4";
-            this.grb4.Size = new System.Drawing.Size(871, 361);
+            this.grb4.Size = new System.Drawing.Size(972, 400);
             this.grb4.TabIndex = 2;
             this.grb4.TabStop = false;
             this.grb4.Text = "Праівники";
             // 
-            // працівникиDataGridView
-            // 
-            this.працівникиDataGridView.AutoGenerateColumns = false;
-            this.працівникиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.працівникиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            this.працівникиDataGridView.DataSource = this.працівникиBindingSource;
-            this.працівникиDataGridView.Location = new System.Drawing.Point(38, 63);
-            this.працівникиDataGridView.Name = "працівникиDataGridView";
-            this.працівникиDataGridView.Size = new System.Drawing.Size(796, 250);
-            this.працівникиDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "№ працівника";
-            this.dataGridViewTextBoxColumn1.HeaderText = "№ працівника";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "ПІБ";
-            this.dataGridViewTextBoxColumn9.HeaderText = "ПІБ";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 63;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Дата народження";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Дата народження";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Вік";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Вік";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Стать";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Стать";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Адрес";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Адрес";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Відділення";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Відділення";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Посада";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Посада";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
             // txbSearchWorker
             // 
             this.txbSearchWorker.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txbSearchWorker.Location = new System.Drawing.Point(722, 796);
+            this.txbSearchWorker.Location = new System.Drawing.Point(641, 813);
             this.txbSearchWorker.Multiline = true;
             this.txbSearchWorker.Name = "txbSearchWorker";
             this.txbSearchWorker.Size = new System.Drawing.Size(303, 29);
@@ -688,19 +521,11 @@ namespace Bank
             // txbSearchOtd
             // 
             this.txbSearchOtd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txbSearchOtd.Location = new System.Drawing.Point(722, 357);
+            this.txbSearchOtd.Location = new System.Drawing.Point(630, 371);
             this.txbSearchOtd.Multiline = true;
             this.txbSearchOtd.Name = "txbSearchOtd";
             this.txbSearchOtd.Size = new System.Drawing.Size(303, 30);
             this.txbSearchOtd.TabIndex = 24;
-            // 
-            // відділеняTableAdapter
-            // 
-            this.відділеняTableAdapter.ClearBeforeFill = true;
-            // 
-            // працівникиTableAdapter
-            // 
-            this.працівникиTableAdapter.ClearBeforeFill = true;
             // 
             // WRefresh
             // 
@@ -713,20 +538,10 @@ namespace Bank
             this.WRefresh.UseVisualStyleBackColor = true;
             this.WRefresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Bank.BDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.ВідділеняTableAdapter = null;
-            this.tableAdapterManager.ВкладиTableAdapter = null;
-            this.tableAdapterManager.КліентиTableAdapter = null;
-            this.tableAdapterManager.ПрацівникиTableAdapter = null;
-            // 
             // btnSearchOtd
             // 
             this.btnSearchOtd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchOtd.Location = new System.Drawing.Point(615, 357);
+            this.btnSearchOtd.Location = new System.Drawing.Point(525, 371);
             this.btnSearchOtd.Name = "btnSearchOtd";
             this.btnSearchOtd.Size = new System.Drawing.Size(83, 32);
             this.btnSearchOtd.TabIndex = 27;
@@ -748,7 +563,7 @@ namespace Bank
             // btnSearchWorker
             // 
             this.btnSearchWorker.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSearchWorker.Location = new System.Drawing.Point(615, 796);
+            this.btnSearchWorker.Location = new System.Drawing.Point(525, 814);
             this.btnSearchWorker.Name = "btnSearchWorker";
             this.btnSearchWorker.Size = new System.Drawing.Size(83, 30);
             this.btnSearchWorker.TabIndex = 29;
@@ -756,12 +571,184 @@ namespace Bank
             this.btnSearchWorker.UseVisualStyleBackColor = true;
             this.btnSearchWorker.Click += new System.EventHandler(this.btnSearchWorker_Click);
             // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.UpdateOrder = Bank.BDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.ВідділеняTableAdapter = null;
+            this.tableAdapterManager.ВкладиTableAdapter = null;
+            this.tableAdapterManager.КліентиTableAdapter = null;
+            this.tableAdapterManager.ПрацівникиTableAdapter = null;
+            // 
+            // відділеняTableAdapter
+            // 
+            this.відділеняTableAdapter.ClearBeforeFill = true;
+            // 
+            // кліентиToolStripMenuItem
+            // 
+            this.кліентиToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.кліентиToolStripMenuItem.Name = "кліентиToolStripMenuItem";
+            this.кліентиToolStripMenuItem.Size = new System.Drawing.Size(76, 25);
+            this.кліентиToolStripMenuItem.Text = "Кліенти";
+            this.кліентиToolStripMenuItem.Click += new System.EventHandler(this.кліентиToolStripMenuItem_Click);
+            // 
+            // вихідToolStripMenuItem
+            // 
+            this.вихідToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
+            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(60, 25);
+            this.вихідToolStripMenuItem.Text = "Вихід";
+            this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.кліентиToolStripMenuItem,
+            this.вихідToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1413, 29);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // bDDataSet
+            // 
+            this.bDDataSet.DataSetName = "BDDataSet";
+            this.bDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // відділеняBindingSource
+            // 
+            this.відділеняBindingSource.DataMember = "Відділеня";
+            this.відділеняBindingSource.DataSource = this.bDDataSet;
+            // 
+            // працівникиTableAdapter
+            // 
+            this.працівникиTableAdapter.ClearBeforeFill = true;
+            // 
+            // відділеняDataGridView
+            // 
+            this.відділеняDataGridView.AutoGenerateColumns = false;
+            this.відділеняDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.відділеняDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.відділеняDataGridView.DataSource = this.відділеняBindingSource;
+            this.відділеняDataGridView.Location = new System.Drawing.Point(38, 25);
+            this.відділеняDataGridView.Name = "відділеняDataGridView";
+            this.відділеняDataGridView.Size = new System.Drawing.Size(537, 199);
+            this.відділеняDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "№_відділення";
+            this.dataGridViewTextBoxColumn2.HeaderText = "№_відділення";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 135;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Адрес";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Адрес";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Номер";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Номер";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Емайл";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Емайл";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // працівникиBindingSource
+            // 
+            this.працівникиBindingSource.DataMember = "Працівники";
+            this.працівникиBindingSource.DataSource = this.bDDataSet;
+            // 
+            // працівникиDataGridView
+            // 
+            this.працівникиDataGridView.AutoGenerateColumns = false;
+            this.працівникиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.працівникиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            this.працівникиDataGridView.DataSource = this.працівникиBindingSource;
+            this.працівникиDataGridView.Location = new System.Drawing.Point(0, 25);
+            this.працівникиDataGridView.Name = "працівникиDataGridView";
+            this.працівникиDataGridView.Size = new System.Drawing.Size(966, 364);
+            this.працівникиDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "№_працівника";
+            this.dataGridViewTextBoxColumn4.HeaderText = "№_працівника";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 140;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ПІБ";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ПІБ";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Дата_народження";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Дата_народження";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 165;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Вік";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Вік";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Стать";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Стать";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Адрес";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Адрес";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Відділення";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Відділення";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Посада";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Посада";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
             // fBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1320, 910);
+            this.ClientSize = new System.Drawing.Size(1413, 902);
             this.Controls.Add(this.btnSearchWorker);
             this.Controls.Add(this.btnRefreshWorker);
             this.Controls.Add(this.btnSearchOtd);
@@ -774,22 +761,22 @@ namespace Bank
             this.Controls.Add(this.grb1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1336, 949);
+            this.MaximumSize = new System.Drawing.Size(1429, 941);
             this.Name = "fBank";
             this.Text = "Банк";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grb1.ResumeLayout(false);
             this.grb1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).EndInit();
             this.grb2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dg1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.grb3.ResumeLayout(false);
             this.grb3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).EndInit();
             this.grb4.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.відділеняDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -800,10 +787,6 @@ namespace Bank
 
         private System.Windows.Forms.GroupBox grb1;
         private System.Windows.Forms.GroupBox grb2;
-        private System.Windows.Forms.DataGridView dg1;
-        private BDDataSet bDDataSet;
-        private System.Windows.Forms.BindingSource відділеняBindingSource;
-        private BDDataSetTableAdapters.ВідділеняTableAdapter відділеняTableAdapter;
         private System.Windows.Forms.Button btDelOtd;
         private System.Windows.Forms.Button btUpdate;
         private System.Windows.Forms.Button btNext;
@@ -817,11 +800,7 @@ namespace Bank
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn відділенняDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn адресDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn номерDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn емайлDataGridViewTextBoxColumn;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+      
         private System.Windows.Forms.GroupBox grb3;
         private System.Windows.Forms.Button btnDelWork;
         private System.Windows.Forms.Button btnUpdateWork;
@@ -837,9 +816,6 @@ namespace Bank
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox grb4;
-        private System.Windows.Forms.BindingSource працівникиBindingSource;
-        private BDDataSetTableAdapters.ПрацівникиTableAdapter працівникиTableAdapter;
-        private BDDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox txb11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txb12;
@@ -851,21 +827,34 @@ namespace Bank
 
         private System.Windows.Forms.TextBox txbSearchWorker;
         private System.Windows.Forms.TextBox txbSearchOtd;
-        private System.Windows.Forms.ToolStripMenuItem кліентиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вихідToolStripMenuItem;
         private System.Windows.Forms.Button WRefresh;
         private System.Windows.Forms.Button btnSearchOtd;
         private System.Windows.Forms.Button btnRefreshWorker;
         private System.Windows.Forms.Button btnSearchWorker;
+
+        private System.Windows.Forms.DataGridView відділеняDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.BindingSource відділеняBindingSource;
+        private BDDataSet bDDataSet;
         private System.Windows.Forms.DataGridView працівникиDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.BindingSource працівникиBindingSource;
+        private BDDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private BDDataSetTableAdapters.ВідділеняTableAdapter відділеняTableAdapter;
+        private System.Windows.Forms.ToolStripMenuItem кліентиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вихідToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private BDDataSetTableAdapters.ПрацівникиTableAdapter працівникиTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
     }
 }
 

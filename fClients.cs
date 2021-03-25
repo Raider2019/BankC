@@ -14,10 +14,14 @@ namespace Bank
 
         private void fClients_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Вклади". При необходимости она может быть перемещена или удалена.
-            this.вкладиTableAdapter.Fill(this.bDDataSet.Вклади);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Кліенти". При необходимости она может быть перемещена или удалена.
             this.кліентиTableAdapter.Fill(this.bDDataSet.Кліенти);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Вклади". При необходимости она может быть перемещена или удалена.
+            this.вкладиTableAdapter.Fill(this.bDDataSet.Вклади);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Вклади". При необходимости она может быть перемещена или удалена.
+      
+           
+         
 
         }
 
@@ -108,7 +112,7 @@ namespace Bank
 
         private void btSearchVkl_Click(object sender, EventArgs e)
         {
-            вкладиBindingSource.Filter = "[Термін вкладу місяці] LIKE '" + txSearhVkl.Text + "%'";
+            вкладиBindingSource.Filter = "[Термін_вкладу_місяці] LIKE '" + txSearhVkl.Text + "%'";
         }
 
         private void банкToolStripMenuItem_Click(object sender, EventArgs e)
@@ -128,19 +132,21 @@ namespace Bank
 
         }
 
-        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fGeneral f = new fGeneral();
-            f.Show();
-            this.Hide();
-
-        }
+  
 
         private void доходиКліентівToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReportSuma f = new ReportSuma();
             f.Show();
             this.Hide();
+        }
+
+        private void вкладиBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.вкладиBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bDDataSet);
+
         }
     }
 
