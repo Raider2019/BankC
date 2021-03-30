@@ -118,10 +118,10 @@ namespace Bank
             this.gb1.BackColor = System.Drawing.Color.DarkOrange;
             this.gb1.Controls.Add(this.кліентиDataGridView);
             this.gb1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gb1.Location = new System.Drawing.Point(416, 30);
+            this.gb1.Location = new System.Drawing.Point(385, 32);
             this.gb1.MaximumSize = new System.Drawing.Size(983, 317);
             this.gb1.Name = "gb1";
-            this.gb1.Size = new System.Drawing.Size(983, 317);
+            this.gb1.Size = new System.Drawing.Size(981, 223);
             this.gb1.TabIndex = 0;
             this.gb1.TabStop = false;
             this.gb1.Text = "Кліенти";
@@ -239,16 +239,16 @@ namespace Bank
             this.gb2.Controls.Add(this.label17);
             this.gb2.Controls.Add(this.label18);
             this.gb2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gb2.Location = new System.Drawing.Point(12, 30);
+            this.gb2.Location = new System.Drawing.Point(12, 32);
             this.gb2.Name = "gb2";
-            this.gb2.Size = new System.Drawing.Size(386, 450);
+            this.gb2.Size = new System.Drawing.Size(367, 426);
             this.gb2.TabIndex = 12;
             this.gb2.TabStop = false;
             this.gb2.Text = "Дані кліента";
             // 
             // btCli
             // 
-            this.btCli.Location = new System.Drawing.Point(155, 412);
+            this.btCli.Location = new System.Drawing.Point(126, 389);
             this.btCli.Name = "btCli";
             this.btCli.Size = new System.Drawing.Size(89, 32);
             this.btCli.TabIndex = 24;
@@ -258,7 +258,7 @@ namespace Bank
             // 
             // btUpdate
             // 
-            this.btUpdate.Location = new System.Drawing.Point(18, 412);
+            this.btUpdate.Location = new System.Drawing.Point(18, 389);
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(91, 32);
             this.btUpdate.TabIndex = 23;
@@ -268,7 +268,7 @@ namespace Bank
             // 
             // btNext
             // 
-            this.btNext.Location = new System.Drawing.Point(278, 360);
+            this.btNext.Location = new System.Drawing.Point(210, 348);
             this.btNext.Name = "btNext";
             this.btNext.Size = new System.Drawing.Size(102, 35);
             this.btNext.TabIndex = 22;
@@ -278,7 +278,7 @@ namespace Bank
             // 
             // btAddCli
             // 
-            this.btAddCli.Location = new System.Drawing.Point(155, 360);
+            this.btAddCli.Location = new System.Drawing.Point(129, 348);
             this.btAddCli.Name = "btAddCli";
             this.btAddCli.Size = new System.Drawing.Size(75, 35);
             this.btAddCli.TabIndex = 19;
@@ -288,7 +288,7 @@ namespace Bank
             // 
             // btPrev
             // 
-            this.btPrev.Location = new System.Drawing.Point(18, 360);
+            this.btPrev.Location = new System.Drawing.Point(18, 348);
             this.btPrev.Name = "btPrev";
             this.btPrev.Size = new System.Drawing.Size(105, 35);
             this.btPrev.TabIndex = 18;
@@ -463,7 +463,7 @@ namespace Bank
             this.gb3.BackColor = System.Drawing.Color.DarkOrange;
             this.gb3.Controls.Add(this.вкладиDataGridView);
             this.gb3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gb3.Location = new System.Drawing.Point(416, 550);
+            this.gb3.Location = new System.Drawing.Point(404, 464);
             this.gb3.Name = "gb3";
             this.gb3.Size = new System.Drawing.Size(644, 311);
             this.gb3.TabIndex = 13;
@@ -535,16 +535,16 @@ namespace Bank
             this.gb4.Controls.Add(this.label2);
             this.gb4.Controls.Add(this.label1);
             this.gb4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gb4.Location = new System.Drawing.Point(12, 550);
+            this.gb4.Location = new System.Drawing.Point(12, 464);
             this.gb4.Name = "gb4";
-            this.gb4.Size = new System.Drawing.Size(386, 350);
+            this.gb4.Size = new System.Drawing.Size(367, 326);
             this.gb4.TabIndex = 14;
             this.gb4.TabStop = false;
             this.gb4.Text = "Дані вкладів";
             // 
             // btDelVkl
             // 
-            this.btDelVkl.Location = new System.Drawing.Point(141, 313);
+            this.btDelVkl.Location = new System.Drawing.Point(142, 291);
             this.btDelVkl.Name = "btDelVkl";
             this.btDelVkl.Size = new System.Drawing.Size(89, 29);
             this.btDelVkl.TabIndex = 13;
@@ -554,7 +554,7 @@ namespace Bank
             // 
             // btUpdateVkl
             // 
-            this.btUpdateVkl.Location = new System.Drawing.Point(11, 313);
+            this.btUpdateVkl.Location = new System.Drawing.Point(12, 291);
             this.btUpdateVkl.Name = "btUpdateVkl";
             this.btUpdateVkl.Size = new System.Drawing.Size(103, 29);
             this.btUpdateVkl.TabIndex = 12;
@@ -564,7 +564,7 @@ namespace Bank
             // 
             // btNextVkl
             // 
-            this.btNextVkl.Location = new System.Drawing.Point(257, 255);
+            this.btNextVkl.Location = new System.Drawing.Point(258, 233);
             this.btNextVkl.Name = "btNextVkl";
             this.btNextVkl.Size = new System.Drawing.Size(96, 39);
             this.btNextVkl.TabIndex = 10;
@@ -574,7 +574,7 @@ namespace Bank
             // 
             // btAddVkl
             // 
-            this.btAddVkl.Location = new System.Drawing.Point(141, 255);
+            this.btAddVkl.Location = new System.Drawing.Point(142, 233);
             this.btAddVkl.Name = "btAddVkl";
             this.btAddVkl.Size = new System.Drawing.Size(89, 39);
             this.btAddVkl.TabIndex = 9;
@@ -584,7 +584,7 @@ namespace Bank
             // 
             // btPrevVkl
             // 
-            this.btPrevVkl.Location = new System.Drawing.Point(11, 255);
+            this.btPrevVkl.Location = new System.Drawing.Point(12, 233);
             this.btPrevVkl.Name = "btPrevVkl";
             this.btPrevVkl.Size = new System.Drawing.Size(103, 39);
             this.btPrevVkl.TabIndex = 8;
@@ -663,7 +663,7 @@ namespace Bank
             // txSearchCli
             // 
             this.txSearchCli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txSearchCli.Location = new System.Drawing.Point(568, 359);
+            this.txSearchCli.Location = new System.Drawing.Point(594, 269);
             this.txSearchCli.Name = "txSearchCli";
             this.txSearchCli.Size = new System.Drawing.Size(374, 26);
             this.txSearchCli.TabIndex = 15;
@@ -671,7 +671,7 @@ namespace Bank
             // btnSearhCli
             // 
             this.btnSearhCli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSearhCli.Location = new System.Drawing.Point(429, 353);
+            this.btnSearhCli.Location = new System.Drawing.Point(489, 263);
             this.btnSearhCli.Name = "btnSearhCli";
             this.btnSearhCli.Size = new System.Drawing.Size(99, 37);
             this.btnSearhCli.TabIndex = 16;
@@ -682,7 +682,7 @@ namespace Bank
             // RefreshCli
             // 
             this.RefreshCli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RefreshCli.Location = new System.Drawing.Point(23, 497);
+            this.RefreshCli.Location = new System.Drawing.Point(385, 264);
             this.RefreshCli.Name = "RefreshCli";
             this.RefreshCli.Size = new System.Drawing.Size(98, 34);
             this.RefreshCli.TabIndex = 17;
@@ -693,9 +693,9 @@ namespace Bank
             // btSearchVkl
             // 
             this.btSearchVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSearchVkl.Location = new System.Drawing.Point(440, 883);
+            this.btSearchVkl.Location = new System.Drawing.Point(495, 781);
             this.btSearchVkl.Name = "btSearchVkl";
-            this.btSearchVkl.Size = new System.Drawing.Size(99, 46);
+            this.btSearchVkl.Size = new System.Drawing.Size(93, 33);
             this.btSearchVkl.TabIndex = 18;
             this.btSearchVkl.Text = "Пошук";
             this.btSearchVkl.UseVisualStyleBackColor = true;
@@ -704,7 +704,7 @@ namespace Bank
             // txSearhVkl
             // 
             this.txSearhVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txSearhVkl.Location = new System.Drawing.Point(557, 894);
+            this.txSearhVkl.Location = new System.Drawing.Point(607, 781);
             this.txSearhVkl.Name = "txSearhVkl";
             this.txSearhVkl.Size = new System.Drawing.Size(361, 26);
             this.txSearhVkl.TabIndex = 19;
@@ -712,7 +712,7 @@ namespace Bank
             // btRefreshVkl
             // 
             this.btRefreshVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRefreshVkl.Location = new System.Drawing.Point(12, 906);
+            this.btRefreshVkl.Location = new System.Drawing.Point(396, 781);
             this.btRefreshVkl.Name = "btRefreshVkl";
             this.btRefreshVkl.Size = new System.Drawing.Size(93, 33);
             this.btRefreshVkl.TabIndex = 20;
@@ -727,7 +727,7 @@ namespace Bank
             this.звітиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1409, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1369, 29);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -779,7 +779,7 @@ namespace Bank
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1409, 958);
+            this.ClientSize = new System.Drawing.Size(1369, 818);
             this.Controls.Add(this.btRefreshVkl);
             this.Controls.Add(this.txSearhVkl);
             this.Controls.Add(this.btSearchVkl);
@@ -792,8 +792,9 @@ namespace Bank
             this.Controls.Add(this.gb1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1425, 997);
+            this.MaximumSize = new System.Drawing.Size(1385, 857);
             this.Name = "fClients";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Кліенти і вклади";
             this.Load += new System.EventHandler(this.fClients_Load);
             this.gb1.ResumeLayout(false);
