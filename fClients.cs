@@ -148,6 +148,11 @@ namespace Bank
             this.tableAdapterManager.UpdateAll(this.bDDataSet);
 
         }
+
+        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 
 

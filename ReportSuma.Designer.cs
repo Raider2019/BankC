@@ -30,27 +30,17 @@ namespace Bank
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.SumBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BDDataSet = new Bank.BDDataSet();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.кліентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Rep1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.SumTableAdapter = new Bank.BDDataSetTableAdapters.SumTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.SumBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BDDataSet)).BeginInit();
+            this.bDDataSet1 = new Bank.BDDataSet();
+            this.sumBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sumTableAdapter1 = new Bank.BDDataSetTableAdapters.SumTableAdapter();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bDDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sumBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // SumBindingSource
-            // 
-            this.SumBindingSource.DataMember = "Sum";
-            this.SumBindingSource.DataSource = this.BDDataSet;
-            // 
-            // BDDataSet
-            // 
-            this.BDDataSet.DataSetName = "BDDataSet";
-            this.BDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // menuStrip1
             // 
@@ -72,19 +62,30 @@ namespace Bank
             // 
             // Rep1
             // 
-            reportDataSource4.Name = "Suma";
-            reportDataSource4.Value = this.SumBindingSource;
-            this.Rep1.LocalReport.DataSources.Add(reportDataSource4);
+            this.Rep1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "SumaReport";
+            reportDataSource1.Value = this.sumBindingSource;
+            this.Rep1.LocalReport.DataSources.Add(reportDataSource1);
             this.Rep1.LocalReport.ReportEmbeddedResource = "Bank.ReportsSuma.rdlc";
             this.Rep1.Location = new System.Drawing.Point(0, 29);
             this.Rep1.Name = "Rep1";
             this.Rep1.ServerReport.BearerToken = null;
-            this.Rep1.Size = new System.Drawing.Size(916, 452);
+            this.Rep1.Size = new System.Drawing.Size(817, 450);
             this.Rep1.TabIndex = 1;
             // 
-            // SumTableAdapter
+            // bDDataSet1
             // 
-            this.SumTableAdapter.ClearBeforeFill = true;
+            this.bDDataSet1.DataSetName = "BDDataSet";
+            this.bDDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sumBindingSource
+            // 
+            this.sumBindingSource.DataMember = "Sum";
+            this.sumBindingSource.DataSource = this.bDDataSet1;
+            // 
+            // sumTableAdapter1
+            // 
+            this.sumTableAdapter1.ClearBeforeFill = true;
             // 
             // ReportSuma
             // 
@@ -100,10 +101,10 @@ namespace Bank
             this.Name = "ReportSuma";
             this.Text = "Заіт доходи кіентів";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.SumBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BDDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bDDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sumBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,10 +113,10 @@ namespace Bank
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private Microsoft.Reporting.WinForms.ReportViewer Rep1;
         private System.Windows.Forms.ToolStripMenuItem кліентиToolStripMenuItem;
-        private System.Windows.Forms.BindingSource SumBindingSource;
-        private BDDataSet BDDataSet;
-        private BDDataSetTableAdapters.SumTableAdapter SumTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer Rep1;
+        private BDDataSet bDDataSet1;
+        private System.Windows.Forms.BindingSource sumBindingSource;
+        private BDDataSetTableAdapters.SumTableAdapter sumTableAdapter1;
     }
 }

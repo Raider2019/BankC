@@ -315,7 +315,7 @@
               <DbSource ConnectionRef="BDConnectionString (Settings)" DbObjectName="[Sum]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT ПІБ, Сума_вклада, Термін_вкладу_місяці, Термін_вкладу_дні, Сума, Разом FROM [Sum]</CommandText>
+                    <CommandText>SELECT ПІБ, Сума_вклада, Термін_вкладу_місяці, Термін_вкладу_дні, Відсоток, Сума, Разом FROM [Sum]</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -326,6 +326,7 @@
               <Mapping SourceColumn="Сума_вклада" DataSetColumn="Сума_вклада" />
               <Mapping SourceColumn="Термін_вкладу_місяці" DataSetColumn="Термін_вкладу_місяці" />
               <Mapping SourceColumn="Термін_вкладу_дні" DataSetColumn="Термін_вкладу_дні" />
+              <Mapping SourceColumn="Відсоток" DataSetColumn="Відсоток" />
               <Mapping SourceColumn="Сума" DataSetColumn="Сума" />
               <Mapping SourceColumn="Разом" DataSetColumn="Разом" />
             </Mappings>
@@ -503,6 +504,7 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Термін_вкладу_дні" msprop:Generator_ColumnVarNameInTable="columnТермін_вкладу_дні" msprop:Generator_ColumnPropNameInRow="Термін_вкладу_дні" msprop:Generator_ColumnPropNameInTable="Термін_вкладу_дніColumn" msprop:Generator_UserColumnName="Термін_вкладу_дні" type="xs:short" minOccurs="0" />
+              <xs:element name="Відсоток" msprop:Generator_ColumnVarNameInTable="columnВідсоток" msprop:Generator_ColumnPropNameInRow="Відсоток" msprop:Generator_ColumnPropNameInTable="ВідсотокColumn" msprop:Generator_UserColumnName="Відсоток" type="xs:double" minOccurs="0" />
               <xs:element name="Сума" msprop:Generator_ColumnVarNameInTable="columnСума" msprop:Generator_ColumnPropNameInRow="Сума" msprop:Generator_ColumnPropNameInTable="СумаColumn" msprop:Generator_UserColumnName="Сума" type="xs:double" minOccurs="0" />
               <xs:element name="Разом" msprop:Generator_ColumnVarNameInTable="columnРазом" msprop:Generator_ColumnPropNameInRow="Разом" msprop:Generator_ColumnPropNameInTable="РазомColumn" msprop:Generator_UserColumnName="Разом" type="xs:double" minOccurs="0" />
             </xs:sequence>

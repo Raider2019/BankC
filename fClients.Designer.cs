@@ -94,13 +94,14 @@ namespace Bank
             this.btSearchVkl = new System.Windows.Forms.Button();
             this.txSearhVkl = new System.Windows.Forms.TextBox();
             this.btRefreshVkl = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ms2 = new System.Windows.Forms.MenuStrip();
             this.банкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.звітиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.доходиКліентівToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вкладиTableAdapter = new Bank.BDDataSetTableAdapters.ВкладиTableAdapter();
             this.tableAdapterManager = new Bank.BDDataSetTableAdapters.TableAdapterManager();
             this.кліентиTableAdapter = new Bank.BDDataSetTableAdapters.КліентиTableAdapter();
+            this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.кліентиDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.кліентиBindingSource)).BeginInit();
@@ -110,7 +111,7 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.вкладиDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.вкладиBindingSource)).BeginInit();
             this.gb4.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.ms2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb1
@@ -720,17 +721,19 @@ namespace Bank
             this.btRefreshVkl.UseVisualStyleBackColor = true;
             this.btRefreshVkl.Click += new System.EventHandler(this.btRefreshVkl_Click);
             // 
-            // menuStrip1
+            // ms2
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ms2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ms2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.банкToolStripMenuItem,
-            this.звітиToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1369, 29);
-            this.menuStrip1.TabIndex = 21;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            this.звітиToolStripMenuItem,
+            this.вихідToolStripMenuItem});
+            this.ms2.Location = new System.Drawing.Point(0, 0);
+            this.ms2.Name = "ms2";
+            this.ms2.Size = new System.Drawing.Size(1381, 29);
+            this.ms2.TabIndex = 21;
+            this.ms2.Text = "ms2";
+            this.ms2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // банкToolStripMenuItem
             // 
@@ -753,8 +756,8 @@ namespace Bank
             // доходиКліентівToolStripMenuItem
             // 
             this.доходиКліентівToolStripMenuItem.Name = "доходиКліентівToolStripMenuItem";
-            this.доходиКліентівToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.доходиКліентівToolStripMenuItem.Text = "Доходи кліентів";
+            this.доходиКліентівToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.доходиКліентівToolStripMenuItem.Text = "Дохід кліентів";
             this.доходиКліентівToolStripMenuItem.Click += new System.EventHandler(this.доходиКліентівToolStripMenuItem_Click);
             // 
             // вкладиTableAdapter
@@ -774,12 +777,20 @@ namespace Bank
             // 
             this.кліентиTableAdapter.ClearBeforeFill = true;
             // 
+            // вихідToolStripMenuItem
+            // 
+            this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
+            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(60, 25);
+            this.вихідToolStripMenuItem.Text = "Вихід";
+            this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
+            // 
             // fClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1369, 818);
+            this.ClientSize = new System.Drawing.Size(1398, 458);
             this.Controls.Add(this.btRefreshVkl);
             this.Controls.Add(this.txSearhVkl);
             this.Controls.Add(this.btSearchVkl);
@@ -790,9 +801,9 @@ namespace Bank
             this.Controls.Add(this.gb3);
             this.Controls.Add(this.gb2);
             this.Controls.Add(this.gb1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1385, 857);
+            this.Controls.Add(this.ms2);
+            this.MainMenuStrip = this.ms2;
+            this.MaximumSize = new System.Drawing.Size(1414, 497);
             this.Name = "fClients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Кліенти і вклади";
@@ -808,8 +819,8 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.вкладиBindingSource)).EndInit();
             this.gb4.ResumeLayout(false);
             this.gb4.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.ms2.ResumeLayout(false);
+            this.ms2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -866,7 +877,7 @@ namespace Bank
         private System.Windows.Forms.Button btSearchVkl;
         private System.Windows.Forms.TextBox txSearhVkl;
         private System.Windows.Forms.Button btRefreshVkl;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip ms2;
         private System.Windows.Forms.ToolStripMenuItem банкToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem звітиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem доходиКліентівToolStripMenuItem;
@@ -890,5 +901,6 @@ namespace Bank
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.ToolStripMenuItem вихідToolStripMenuItem;
     }
 }

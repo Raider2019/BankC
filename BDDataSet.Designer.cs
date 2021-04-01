@@ -1807,6 +1807,8 @@ namespace Bank {
             
             private global::System.Data.DataColumn columnТермін_вкладу_дні;
             
+            private global::System.Data.DataColumn columnВідсоток;
+            
             private global::System.Data.DataColumn columnСума;
             
             private global::System.Data.DataColumn columnРазом;
@@ -1878,6 +1880,14 @@ namespace Bank {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ВідсотокColumn {
+                get {
+                    return this.columnВідсоток;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn СумаColumn {
                 get {
                     return this.columnСума;
@@ -1929,13 +1939,14 @@ namespace Bank {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SumRow AddSumRow(string ПІБ, short Сума_вклада, string Термін_вкладу_місяці, short Термін_вкладу_дні, double Сума, double Разом) {
+            public SumRow AddSumRow(string ПІБ, short Сума_вклада, string Термін_вкладу_місяці, short Термін_вкладу_дні, double Відсоток, double Сума, double Разом) {
                 SumRow rowSumRow = ((SumRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ПІБ,
                         Сума_вклада,
                         Термін_вкладу_місяці,
                         Термін_вкладу_дні,
+                        Відсоток,
                         Сума,
                         Разом};
                 rowSumRow.ItemArray = columnValuesArray;
@@ -1964,6 +1975,7 @@ namespace Bank {
                 this.columnСума_вклада = base.Columns["Сума_вклада"];
                 this.columnТермін_вкладу_місяці = base.Columns["Термін_вкладу_місяці"];
                 this.columnТермін_вкладу_дні = base.Columns["Термін_вкладу_дні"];
+                this.columnВідсоток = base.Columns["Відсоток"];
                 this.columnСума = base.Columns["Сума"];
                 this.columnРазом = base.Columns["Разом"];
             }
@@ -1979,6 +1991,8 @@ namespace Bank {
                 base.Columns.Add(this.columnТермін_вкладу_місяці);
                 this.columnТермін_вкладу_дні = new global::System.Data.DataColumn("Термін_вкладу_дні", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnТермін_вкладу_дні);
+                this.columnВідсоток = new global::System.Data.DataColumn("Відсоток", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВідсоток);
                 this.columnСума = new global::System.Data.DataColumn("Сума", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnСума);
                 this.columnРазом = new global::System.Data.DataColumn("Разом", typeof(double), null, global::System.Data.MappingType.Element);
@@ -2949,6 +2963,22 @@ namespace Bank {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double Відсоток {
+                get {
+                    try {
+                        return ((double)(this[this.tableSum.ВідсотокColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Відсоток\' в таблице \'Sum\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSum.ВідсотокColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public double Сума {
                 get {
                     try {
@@ -3025,6 +3055,18 @@ namespace Bank {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetТермін_вкладу_дніNull() {
                 this[this.tableSum.Термін_вкладу_дніColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsВідсотокNull() {
+                return this.IsNull(this.tableSum.ВідсотокColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetВідсотокNull() {
+                this[this.tableSum.ВідсотокColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5273,6 +5315,7 @@ namespace Bank.BDDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Сума_вклада", "Сума_вклада");
             tableMapping.ColumnMappings.Add("Термін_вкладу_місяці", "Термін_вкладу_місяці");
             tableMapping.ColumnMappings.Add("Термін_вкладу_дні", "Термін_вкладу_дні");
+            tableMapping.ColumnMappings.Add("Відсоток", "Відсоток");
             tableMapping.ColumnMappings.Add("Сума", "Сума");
             tableMapping.ColumnMappings.Add("Разом", "Разом");
             this._adapter.TableMappings.Add(tableMapping);
@@ -5291,8 +5334,8 @@ namespace Bank.BDDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ПІБ, Сума_вклада, Термін_вкладу_місяці, Термін_вкладу_дні, Сума, Разом FRO" +
-                "M [Sum]";
+            this._commandCollection[0].CommandText = "SELECT ПІБ, Сума_вклада, Термін_вкладу_місяці, Термін_вкладу_дні, Відсоток, Сума," +
+                " Разом FROM [Sum]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

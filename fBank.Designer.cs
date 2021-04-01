@@ -95,10 +95,9 @@ namespace Bank
             this.відділеняTableAdapter = new Bank.BDDataSetTableAdapters.ВідділеняTableAdapter();
             this.кліентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ms1 = new System.Windows.Forms.MenuStrip();
             this.працівникиTableAdapter = new Bank.BDDataSetTableAdapters.ПрацівникиTableAdapter();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.bdDataSet1 = new Bank.BDDataSet();
             this.grb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
@@ -108,7 +107,8 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).BeginInit();
             this.grb4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.ms1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // grb1
@@ -730,43 +730,33 @@ namespace Bank
             this.вихідToolStripMenuItem.Text = "Вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
-            // menuStrip1
+            // ms1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ms1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.кліентиToolStripMenuItem,
             this.вихідToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1211, 29);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
+            this.ms1.Location = new System.Drawing.Point(0, 0);
+            this.ms1.Name = "ms1";
+            this.ms1.Size = new System.Drawing.Size(1219, 29);
+            this.ms1.TabIndex = 2;
+            this.ms1.Text = "menuStrip1";
             // 
             // працівникиTableAdapter
             // 
             this.працівникиTableAdapter.ClearBeforeFill = true;
             // 
-            // vScrollBar1
+            // bdDataSet1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1193, 29);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 775);
-            this.vScrollBar1.TabIndex = 30;
-            // 
-            // hScrollBar1
-            // 
-            this.hScrollBar1.Location = new System.Drawing.Point(1210, 381);
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(8, 8);
-            this.hScrollBar1.TabIndex = 31;
+            this.bdDataSet1.DataSetName = "BDDataSet";
+            this.bdDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // fBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1211, 336);
-            this.Controls.Add(this.hScrollBar1);
-            this.Controls.Add(this.vScrollBar1);
+            this.ClientSize = new System.Drawing.Size(1236, 335);
             this.Controls.Add(this.btnSearchWorker);
             this.Controls.Add(this.btnRefreshWorker);
             this.Controls.Add(this.btnSearchOtd);
@@ -777,9 +767,9 @@ namespace Bank
             this.Controls.Add(this.grb3);
             this.Controls.Add(this.grb2);
             this.Controls.Add(this.grb1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1227, 823);
+            this.Controls.Add(this.ms1);
+            this.MainMenuStrip = this.ms1;
+            this.MaximumSize = new System.Drawing.Size(1252, 374);
             this.Name = "fBank";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Банк";
@@ -795,8 +785,9 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).EndInit();
             this.grb4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.ms1.ResumeLayout(false);
+            this.ms1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -864,7 +855,7 @@ namespace Bank
         private BDDataSetTableAdapters.ВідділеняTableAdapter відділеняTableAdapter;
         private System.Windows.Forms.ToolStripMenuItem кліентиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вихідToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip ms1;
         private BDDataSetTableAdapters.ПрацівникиTableAdapter працівникиTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
@@ -874,8 +865,7 @@ namespace Bank
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.HScrollBar hScrollBar1;
+        private BDDataSet bdDataSet1;
     }
 }
 

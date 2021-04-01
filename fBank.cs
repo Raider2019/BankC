@@ -139,16 +139,6 @@ namespace Bank
             this.Hide();
         }
 
-        private void відділеняBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.відділеняBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bDDataSet);
-
-        }
+      
     }
 }
-
-
-
-

@@ -6,10 +6,10 @@
         <Source>Embedded</Source>
         <Value>pic</Value>
         <Sizing>Fit</Sizing>
-        <Top>1.26682cm</Top>
-        <Left>2.63601cm</Left>
-        <Height>2.135cm</Height>
-        <Width>2.08208cm</Width>
+        <Top>0.84349cm</Top>
+        <Left>1.68351cm</Left>
+        <Height>2.55833cm</Height>
+        <Width>3.03458cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -26,7 +26,7 @@
                 <Value> Звіт </Value>
                 <Style>
                   <FontFamily>Times New Roman</FontFamily>
-                  <FontSize>18pt</FontSize>
+                  <FontSize>24pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -38,10 +38,10 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>фінанси кліентів</Value>
+                <Value>дохід кліентів</Value>
                 <Style>
                   <FontFamily>Times New Roman</FontFamily>
-                  <FontSize>18pt</FontSize>
+                  <FontSize>24pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -52,10 +52,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox37</rd:DefaultName>
-        <Top>1.55787cm</Top>
+        <Top>0.97578cm</Top>
         <Left>5.50743cm</Left>
-        <Height>1.42062cm</Height>
-        <Width>11.31062cm</Width>
+        <Height>2.42604cm</Height>
+        <Width>11.33708cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border />
@@ -69,31 +69,34 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.98608cm</Width>
+              <Width>3.36305cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.98608cm</Width>
+              <Width>2.93089cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.98608cm</Width>
+              <Width>2.93089cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7249cm</Width>
+              <Width>2.93089cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7249cm</Width>
+              <Width>3.36305cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.7249cm</Width>
+              <Width>3.36305cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.93089cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.6451cm</Height>
+              <Height>2.06844cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox7">
+                    <Textbox Name="Textbox1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -102,8 +105,8 @@
                             <TextRun>
                               <Value>ПІБ</Value>
                               <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontSize>16pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>18pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -113,43 +116,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox7</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox9">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Сума вклада</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontSize>16pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -172,10 +139,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Термін вкладу місяці</Value>
+                              <Value>Сума вклада</Value>
                               <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontSize>16pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>18pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -201,7 +168,43 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox13">
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Термін вкладу місяці</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>18pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox7">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -210,8 +213,116 @@
                             <TextRun>
                               <Value>Термін вкладу дні</Value>
                               <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontSize>16pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>18pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Відсоток</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>18pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox5">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Сума</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>18pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox13">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Разом</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>18pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -235,82 +346,10 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox17">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Сума</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontSize>16pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox17</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox15">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Разом</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontSize>16pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox15</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>1.6451cm</Height>
+              <Height>2.06844cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -323,8 +362,8 @@
                             <TextRun>
                               <Value>=Fields!ПІБ.Value</Value>
                               <Style>
-                                <FontFamily>tImes New Roman</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -358,8 +397,8 @@
                             <TextRun>
                               <Value>=Fields!Сума_вклада.Value</Value>
                               <Style>
-                                <FontFamily>tImes New Roman</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -393,8 +432,8 @@
                             <TextRun>
                               <Value>=Fields!Термін_вкладу_місяці.Value</Value>
                               <Style>
-                                <FontFamily>tImes New Roman</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -428,8 +467,8 @@
                             <TextRun>
                               <Value>=Fields!Термін_вкладу_дні.Value</Value>
                               <Style>
-                                <FontFamily>tImes New Roman</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -454,6 +493,41 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="Відсоток">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Відсоток.Value</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Відсоток</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Сума">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -463,8 +537,8 @@
                             <TextRun>
                               <Value>=Fields!Сума.Value</Value>
                               <Style>
-                                <FontFamily>tImes New Roman</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -498,8 +572,8 @@
                             <TextRun>
                               <Value>=Fields!Разом.Value</Value>
                               <Style>
-                                <FontFamily>tImes New Roman</FontFamily>
-                                <FontSize>12pt</FontSize>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -534,6 +608,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -546,11 +621,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>Suma</DataSetName>
-        <Top>6.13516cm</Top>
-        <Left>0.95691cm</Left>
-        <Height>3.29021cm</Height>
-        <Width>20.13292cm</Width>
+        <DataSetName>SumaReport</DataSetName>
+        <Top>5.44724cm</Top>
+        <Left>1.18745cm</Left>
+        <Height>4.13688cm</Height>
+        <Width>21.81271cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -564,10 +639,10 @@
       <Border>
         <Style>None</Style>
       </Border>
-      <BackgroundColor>White</BackgroundColor>
+      <BackgroundColor>SteelBlue</BackgroundColor>
     </Style>
   </Body>
-  <Width>8.44791in</Width>
+  <Width>9.68551in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -589,7 +664,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="Suma">
+    <DataSet Name="SumaReport">
       <Query>
         <DataSourceName>BDDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -610,6 +685,10 @@
         <Field Name="Термін_вкладу_дні">
           <DataField>Термін_вкладу_дні</DataField>
           <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Відсоток">
+          <DataField>Відсоток</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="Сума">
           <DataField>Сума</DataField>
