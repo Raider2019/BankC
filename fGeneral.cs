@@ -15,7 +15,12 @@ using System.Threading;
             t.Abort();
         
             }
-            public void StartForm()
+        private void fGeneral_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void StartForm()
             {
 
             Application.Run(new fLoad());
@@ -34,11 +39,7 @@ using System.Threading;
                     Application.Exit();
             }
 
-            private void fGeneral_Load(object sender, EventArgs e)
-            {
-
-            }
-
+          
             private void btnCliVKl_Click(object sender, EventArgs e)
             {
                 fClients f = new fClients();

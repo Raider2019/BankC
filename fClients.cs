@@ -19,38 +19,39 @@ namespace Bank
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Вклади". При необходимости она может быть перемещена или удалена.
             this.вкладиTableAdapter.Fill(this.bDDataSet.Вклади);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Вклади". При необходимости она может быть перемещена или удалена.
-      
-           
-         
+
+
+
 
         }
-
-        private void btPrev_Click(object sender, EventArgs e)
+        private void btPrevCli_Click(object sender, EventArgs e)
         {
             кліентиBindingSource.MovePrevious();
         }
+     
 
         private void btAddCli_Click(object sender, EventArgs e)
         {
             кліентиBindingSource.AddNew();
         }
 
-        private void btNext_Click(object sender, EventArgs e)
+        private void btNextCli_Click(object sender, EventArgs e)
         {
             кліентиBindingSource.MoveNext();
         }
 
-        private void btUpdate_Click(object sender, EventArgs e)
+        private void btUpdateCli_Click(object sender, EventArgs e)
         {
             кліентиBindingSource.EndEdit();
             кліентиTableAdapter.Update(bDDataSet.Кліенти);
             MessageBox.Show("ОК");
         }
 
-        private void btCli_Click(object sender, EventArgs e)
+        private void btDelCi_Click(object sender, EventArgs e)
         {
             кліентиBindingSource.RemoveCurrent();
         }
+      
 
         private void btPrevVkl_Click(object sender, EventArgs e)
         {
@@ -122,40 +123,25 @@ namespace Bank
             this.Hide();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+
+
+        private void дохідКліентівToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void звітиToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-  
-
-        private void доходиКліентівToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             ReportSuma f = new ReportSuma();
             f.Show();
             this.Hide();
         }
 
-        private void вкладиBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.вкладиBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bDDataSet);
 
-        }
 
         private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+     
     }
-
-
 }
 
 

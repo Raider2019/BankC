@@ -9,8 +9,7 @@ namespace Bank
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void fBank_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Відділеня". При необходимости она может быть перемещена или удалена.
             this.відділеняTableAdapter.Fill(this.bDDataSet.Відділеня);
@@ -18,34 +17,32 @@ namespace Bank
 
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Працівники". При необходимости она может быть перемещена или удалена.
             this.працівникиTableAdapter.Fill(this.bDDataSet.Працівники);
-           
-    
-
         }
-
-        private void btPrev_Click(object sender, EventArgs e)
+      
+        private void btPrevOtd_Click(object sender, EventArgs e)
         {
             відділеняBindingSource.MovePrevious();
         }
+
+      
 
         private void btAddOtd_Click(object sender, EventArgs e)
         {
             відділеняBindingSource.AddNew();
 
         }
-
-        private void btNext_Click(object sender, EventArgs e)
+        private void btNextOtd_Click(object sender, EventArgs e)
         {
             відділеняBindingSource.MoveNext();
         }
+     
 
-        private void btUpdate_Click(object sender, EventArgs e)
+    
+        private void btUpdateOtd_Click(object sender, EventArgs e)
         {
-
             відділеняBindingSource.EndEdit();
             відділеняTableAdapter.Update(bDDataSet.Відділеня);
             MessageBox.Show("ОК");
-
         }
 
         private void btDelOtd_Click(object sender, EventArgs e)
@@ -83,19 +80,7 @@ namespace Bank
 
 
 
-
-
-
-
-        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-          ;
-            if (MessageBox.Show("Припинити роботу?", "Банк", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                Application.Exit();
-           
-        }
-
-        private void Refresh_Click(object sender, EventArgs e)
+        private void RefreshOtd_Click(object sender, EventArgs e)
         {
             try
             {
@@ -107,6 +92,12 @@ namespace Bank
 
             }
         }
+
+
+
+
+
+      
 
         private void btnSearchOtd_Click(object sender, EventArgs e)
         {
@@ -132,13 +123,23 @@ namespace Bank
             }
         }
 
-        private void кліентиToolStripMenuItem_Click(object sender, EventArgs e)
+  
+
+        private void кліентиToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             fClients f = new fClients();
             f.Show();
             this.Hide();
         }
 
-      
+        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Припинити роботу?", "Банк", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                Application.Exit();
+
+        }
+
+   
     }
+   
 }

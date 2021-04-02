@@ -32,8 +32,8 @@
             this.btnOpenBank = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnCliVKl = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picGeneral = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picGeneral)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOpenBank
@@ -72,15 +72,15 @@
             this.btnCliVKl.UseVisualStyleBackColor = true;
             this.btnCliVKl.Click += new System.EventHandler(this.btnCliVKl_Click);
             // 
-            // pictureBox1
+            // picGeneral
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(40, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(936, 432);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.picGeneral.Image = ((System.Drawing.Image)(resources.GetObject("picGeneral.Image")));
+            this.picGeneral.Location = new System.Drawing.Point(40, 12);
+            this.picGeneral.Name = "picGeneral";
+            this.picGeneral.Size = new System.Drawing.Size(936, 432);
+            this.picGeneral.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picGeneral.TabIndex = 3;
+            this.picGeneral.TabStop = false;
             // 
             // fGeneral
             // 
@@ -88,7 +88,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1022, 568);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picGeneral);
             this.Controls.Add(this.btnCliVKl);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnOpenBank);
@@ -99,7 +99,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Головне меню";
             this.Load += new System.EventHandler(this.fGeneral_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGeneral)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,6 +109,6 @@
         private System.Windows.Forms.Button btnOpenBank;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnCliVKl;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picGeneral;
     }
 }

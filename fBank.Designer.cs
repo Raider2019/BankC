@@ -30,38 +30,38 @@ namespace Bank
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.grb1 = new System.Windows.Forms.GroupBox();
+            this.grboxInfOtd = new System.Windows.Forms.GroupBox();
             this.btDelOtd = new System.Windows.Forms.Button();
-            this.btUpdate = new System.Windows.Forms.Button();
-            this.btNext = new System.Windows.Forms.Button();
+            this.btUpdateOtd = new System.Windows.Forms.Button();
+            this.btNextOtd = new System.Windows.Forms.Button();
             this.btAddOtd = new System.Windows.Forms.Button();
-            this.btPrev = new System.Windows.Forms.Button();
+            this.btPrevOtd = new System.Windows.Forms.Button();
             this.txb4 = new System.Windows.Forms.TextBox();
             this.відділеняBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bDDataSet = new Bank.BDDataSet();
             this.txb3 = new System.Windows.Forms.TextBox();
             this.txb2 = new System.Windows.Forms.TextBox();
             this.txb1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.grb2 = new System.Windows.Forms.GroupBox();
+            this.lab4 = new System.Windows.Forms.Label();
+            this.lab3 = new System.Windows.Forms.Label();
+            this.lab2 = new System.Windows.Forms.Label();
+            this.lab1 = new System.Windows.Forms.Label();
+            this.grBoxOtdGrid = new System.Windows.Forms.GroupBox();
             this.відділеняDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grb3 = new System.Windows.Forms.GroupBox();
+            this.grBoxInfoWork = new System.Windows.Forms.GroupBox();
             this.txb11 = new System.Windows.Forms.TextBox();
             this.працівникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label12 = new System.Windows.Forms.Label();
+            this.lab11 = new System.Windows.Forms.Label();
             this.txb12 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lab12 = new System.Windows.Forms.Label();
             this.txb10 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lab10 = new System.Windows.Forms.Label();
             this.txb9 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lab9 = new System.Windows.Forms.Label();
             this.btnDelWork = new System.Windows.Forms.Button();
             this.btnUpdateWork = new System.Windows.Forms.Button();
             this.btnNextWork = new System.Windows.Forms.Button();
@@ -71,11 +71,11 @@ namespace Bank
             this.txb7 = new System.Windows.Forms.TextBox();
             this.txb6 = new System.Windows.Forms.TextBox();
             this.txb5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.grb4 = new System.Windows.Forms.GroupBox();
+            this.lab8 = new System.Windows.Forms.Label();
+            this.lab7 = new System.Windows.Forms.Label();
+            this.lab6 = new System.Windows.Forms.Label();
+            this.lab5 = new System.Windows.Forms.Label();
+            this.grBoxWorkerGrid = new System.Windows.Forms.GroupBox();
             this.працівникиDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,7 +87,7 @@ namespace Bank
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txbSearchWorker = new System.Windows.Forms.TextBox();
             this.txbSearchOtd = new System.Windows.Forms.TextBox();
-            this.WRefresh = new System.Windows.Forms.Button();
+            this.RefreshOtd = new System.Windows.Forms.Button();
             this.btnSearchOtd = new System.Windows.Forms.Button();
             this.btnRefreshWorker = new System.Windows.Forms.Button();
             this.btnSearchWorker = new System.Windows.Forms.Button();
@@ -95,46 +95,46 @@ namespace Bank
             this.відділеняTableAdapter = new Bank.BDDataSetTableAdapters.ВідділеняTableAdapter();
             this.кліентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ms1 = new System.Windows.Forms.MenuStrip();
+            this.msBank = new System.Windows.Forms.MenuStrip();
             this.працівникиTableAdapter = new Bank.BDDataSetTableAdapters.ПрацівникиTableAdapter();
             this.bdDataSet1 = new Bank.BDDataSet();
-            this.grb1.SuspendLayout();
+            this.grboxInfOtd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
-            this.grb2.SuspendLayout();
+            this.grBoxOtdGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.відділеняDataGridView)).BeginInit();
-            this.grb3.SuspendLayout();
+            this.grBoxInfoWork.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).BeginInit();
-            this.grb4.SuspendLayout();
+            this.grBoxWorkerGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).BeginInit();
-            this.ms1.SuspendLayout();
+            this.msBank.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
-            // grb1
+            // grboxInfOtd
             // 
-            this.grb1.BackColor = System.Drawing.Color.DarkOrange;
-            this.grb1.Controls.Add(this.btDelOtd);
-            this.grb1.Controls.Add(this.btUpdate);
-            this.grb1.Controls.Add(this.btNext);
-            this.grb1.Controls.Add(this.btAddOtd);
-            this.grb1.Controls.Add(this.btPrev);
-            this.grb1.Controls.Add(this.txb4);
-            this.grb1.Controls.Add(this.txb3);
-            this.grb1.Controls.Add(this.txb2);
-            this.grb1.Controls.Add(this.txb1);
-            this.grb1.Controls.Add(this.label4);
-            this.grb1.Controls.Add(this.label3);
-            this.grb1.Controls.Add(this.label2);
-            this.grb1.Controls.Add(this.label1);
-            this.grb1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grb1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.grb1.Location = new System.Drawing.Point(12, 46);
-            this.grb1.Name = "grb1";
-            this.grb1.Size = new System.Drawing.Size(411, 290);
-            this.grb1.TabIndex = 0;
-            this.grb1.TabStop = false;
-            this.grb1.Text = "Дані відділення";
+            this.grboxInfOtd.BackColor = System.Drawing.Color.DarkOrange;
+            this.grboxInfOtd.Controls.Add(this.btDelOtd);
+            this.grboxInfOtd.Controls.Add(this.btUpdateOtd);
+            this.grboxInfOtd.Controls.Add(this.btNextOtd);
+            this.grboxInfOtd.Controls.Add(this.btAddOtd);
+            this.grboxInfOtd.Controls.Add(this.btPrevOtd);
+            this.grboxInfOtd.Controls.Add(this.txb4);
+            this.grboxInfOtd.Controls.Add(this.txb3);
+            this.grboxInfOtd.Controls.Add(this.txb2);
+            this.grboxInfOtd.Controls.Add(this.txb1);
+            this.grboxInfOtd.Controls.Add(this.lab4);
+            this.grboxInfOtd.Controls.Add(this.lab3);
+            this.grboxInfOtd.Controls.Add(this.lab2);
+            this.grboxInfOtd.Controls.Add(this.lab1);
+            this.grboxInfOtd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grboxInfOtd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grboxInfOtd.Location = new System.Drawing.Point(12, 46);
+            this.grboxInfOtd.Name = "grboxInfOtd";
+            this.grboxInfOtd.Size = new System.Drawing.Size(411, 290);
+            this.grboxInfOtd.TabIndex = 0;
+            this.grboxInfOtd.TabStop = false;
+            this.grboxInfOtd.Text = "Дані відділення";
             // 
             // btDelOtd
             // 
@@ -146,25 +146,25 @@ namespace Bank
             this.btDelOtd.UseVisualStyleBackColor = true;
             this.btDelOtd.Click += new System.EventHandler(this.btDelOtd_Click);
             // 
-            // btUpdate
+            // btUpdateOtd
             // 
-            this.btUpdate.Location = new System.Drawing.Point(26, 242);
-            this.btUpdate.Name = "btUpdate";
-            this.btUpdate.Size = new System.Drawing.Size(105, 28);
-            this.btUpdate.TabIndex = 11;
-            this.btUpdate.Text = "Зберегти";
-            this.btUpdate.UseVisualStyleBackColor = true;
-            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
+            this.btUpdateOtd.Location = new System.Drawing.Point(26, 242);
+            this.btUpdateOtd.Name = "btUpdateOtd";
+            this.btUpdateOtd.Size = new System.Drawing.Size(105, 28);
+            this.btUpdateOtd.TabIndex = 11;
+            this.btUpdateOtd.Text = "Зберегти";
+            this.btUpdateOtd.UseVisualStyleBackColor = true;
+            this.btUpdateOtd.Click += new System.EventHandler(this.btUpdateOtd_Click);
             // 
-            // btNext
+            // btNextOtd
             // 
-            this.btNext.Location = new System.Drawing.Point(261, 190);
-            this.btNext.Name = "btNext";
-            this.btNext.Size = new System.Drawing.Size(100, 34);
-            this.btNext.TabIndex = 10;
-            this.btNext.Text = "Наступний";
-            this.btNext.UseVisualStyleBackColor = true;
-            this.btNext.Click += new System.EventHandler(this.btNext_Click);
+            this.btNextOtd.Location = new System.Drawing.Point(261, 190);
+            this.btNextOtd.Name = "btNextOtd";
+            this.btNextOtd.Size = new System.Drawing.Size(100, 34);
+            this.btNextOtd.TabIndex = 10;
+            this.btNextOtd.Text = "Наступний";
+            this.btNextOtd.UseVisualStyleBackColor = true;
+            this.btNextOtd.Click += new System.EventHandler(this.btNextOtd_Click);
             // 
             // btAddOtd
             // 
@@ -176,15 +176,15 @@ namespace Bank
             this.btAddOtd.UseVisualStyleBackColor = true;
             this.btAddOtd.Click += new System.EventHandler(this.btAddOtd_Click);
             // 
-            // btPrev
+            // btPrevOtd
             // 
-            this.btPrev.Location = new System.Drawing.Point(26, 190);
-            this.btPrev.Name = "btPrev";
-            this.btPrev.Size = new System.Drawing.Size(105, 34);
-            this.btPrev.TabIndex = 8;
-            this.btPrev.Text = "Попередній";
-            this.btPrev.UseVisualStyleBackColor = true;
-            this.btPrev.Click += new System.EventHandler(this.btPrev_Click);
+            this.btPrevOtd.Location = new System.Drawing.Point(26, 190);
+            this.btPrevOtd.Name = "btPrevOtd";
+            this.btPrevOtd.Size = new System.Drawing.Size(105, 34);
+            this.btPrevOtd.TabIndex = 8;
+            this.btPrevOtd.Text = "Попередній";
+            this.btPrevOtd.UseVisualStyleBackColor = true;
+            this.btPrevOtd.Click += new System.EventHandler(this.btPrevOtd_Click);
             // 
             // txb4
             // 
@@ -228,58 +228,58 @@ namespace Bank
             this.txb1.Size = new System.Drawing.Size(176, 26);
             this.txb1.TabIndex = 4;
             // 
-            // label4
+            // lab4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(40, 150);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 19);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Еиайл";
+            this.lab4.AutoSize = true;
+            this.lab4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab4.Location = new System.Drawing.Point(40, 150);
+            this.lab4.Name = "lab4";
+            this.lab4.Size = new System.Drawing.Size(54, 19);
+            this.lab4.TabIndex = 3;
+            this.lab4.Text = "Еиайл";
             // 
-            // label3
+            // lab3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(40, 113);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Номер";
+            this.lab3.AutoSize = true;
+            this.lab3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab3.Location = new System.Drawing.Point(40, 113);
+            this.lab3.Name = "lab3";
+            this.lab3.Size = new System.Drawing.Size(56, 19);
+            this.lab3.TabIndex = 2;
+            this.lab3.Text = "Номер";
             // 
-            // label2
+            // lab2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(40, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Адрес";
+            this.lab2.AutoSize = true;
+            this.lab2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab2.Location = new System.Drawing.Point(40, 80);
+            this.lab2.Name = "lab2";
+            this.lab2.Size = new System.Drawing.Size(51, 19);
+            this.lab2.TabIndex = 1;
+            this.lab2.Text = "Адрес";
             // 
-            // label1
+            // lab1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(40, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "№";
+            this.lab1.AutoSize = true;
+            this.lab1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab1.Location = new System.Drawing.Point(40, 46);
+            this.lab1.Name = "lab1";
+            this.lab1.Size = new System.Drawing.Size(25, 19);
+            this.lab1.TabIndex = 0;
+            this.lab1.Text = "№";
             // 
-            // grb2
+            // grBoxOtdGrid
             // 
-            this.grb2.BackColor = System.Drawing.Color.DarkOrange;
-            this.grb2.Controls.Add(this.відділеняDataGridView);
-            this.grb2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grb2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.grb2.Location = new System.Drawing.Point(429, 46);
-            this.grb2.Name = "grb2";
-            this.grb2.Size = new System.Drawing.Size(593, 234);
-            this.grb2.TabIndex = 1;
-            this.grb2.TabStop = false;
-            this.grb2.Text = " Відділеня";
+            this.grBoxOtdGrid.BackColor = System.Drawing.Color.DarkOrange;
+            this.grBoxOtdGrid.Controls.Add(this.відділеняDataGridView);
+            this.grBoxOtdGrid.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grBoxOtdGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grBoxOtdGrid.Location = new System.Drawing.Point(429, 46);
+            this.grBoxOtdGrid.Name = "grBoxOtdGrid";
+            this.grBoxOtdGrid.Size = new System.Drawing.Size(593, 234);
+            this.grBoxOtdGrid.TabIndex = 1;
+            this.grBoxOtdGrid.TabStop = false;
+            this.grBoxOtdGrid.Text = " Відділеня";
             // 
             // відділеняDataGridView
             // 
@@ -322,38 +322,38 @@ namespace Bank
             this.dataGridViewTextBoxColumn12.HeaderText = "Емайл";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
-            // grb3
+            // grBoxInfoWork
             // 
-            this.grb3.BackColor = System.Drawing.Color.DarkOrange;
-            this.grb3.Controls.Add(this.txb11);
-            this.grb3.Controls.Add(this.label12);
-            this.grb3.Controls.Add(this.txb12);
-            this.grb3.Controls.Add(this.label11);
-            this.grb3.Controls.Add(this.txb10);
-            this.grb3.Controls.Add(this.label10);
-            this.grb3.Controls.Add(this.txb9);
-            this.grb3.Controls.Add(this.label9);
-            this.grb3.Controls.Add(this.btnDelWork);
-            this.grb3.Controls.Add(this.btnUpdateWork);
-            this.grb3.Controls.Add(this.btnNextWork);
-            this.grb3.Controls.Add(this.btnAddWork);
-            this.grb3.Controls.Add(this.btnPrevWork);
-            this.grb3.Controls.Add(this.txb8);
-            this.grb3.Controls.Add(this.txb7);
-            this.grb3.Controls.Add(this.txb6);
-            this.grb3.Controls.Add(this.txb5);
-            this.grb3.Controls.Add(this.label5);
-            this.grb3.Controls.Add(this.label6);
-            this.grb3.Controls.Add(this.label7);
-            this.grb3.Controls.Add(this.label8);
-            this.grb3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grb3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.grb3.Location = new System.Drawing.Point(10, 342);
-            this.grb3.Name = "grb3";
-            this.grb3.Size = new System.Drawing.Size(413, 422);
-            this.grb3.TabIndex = 3;
-            this.grb3.TabStop = false;
-            this.grb3.Text = "Дані працівники";
+            this.grBoxInfoWork.BackColor = System.Drawing.Color.DarkOrange;
+            this.grBoxInfoWork.Controls.Add(this.txb11);
+            this.grBoxInfoWork.Controls.Add(this.lab11);
+            this.grBoxInfoWork.Controls.Add(this.txb12);
+            this.grBoxInfoWork.Controls.Add(this.lab12);
+            this.grBoxInfoWork.Controls.Add(this.txb10);
+            this.grBoxInfoWork.Controls.Add(this.lab10);
+            this.grBoxInfoWork.Controls.Add(this.txb9);
+            this.grBoxInfoWork.Controls.Add(this.lab9);
+            this.grBoxInfoWork.Controls.Add(this.btnDelWork);
+            this.grBoxInfoWork.Controls.Add(this.btnUpdateWork);
+            this.grBoxInfoWork.Controls.Add(this.btnNextWork);
+            this.grBoxInfoWork.Controls.Add(this.btnAddWork);
+            this.grBoxInfoWork.Controls.Add(this.btnPrevWork);
+            this.grBoxInfoWork.Controls.Add(this.txb8);
+            this.grBoxInfoWork.Controls.Add(this.txb7);
+            this.grBoxInfoWork.Controls.Add(this.txb6);
+            this.grBoxInfoWork.Controls.Add(this.txb5);
+            this.grBoxInfoWork.Controls.Add(this.lab8);
+            this.grBoxInfoWork.Controls.Add(this.lab7);
+            this.grBoxInfoWork.Controls.Add(this.lab6);
+            this.grBoxInfoWork.Controls.Add(this.lab5);
+            this.grBoxInfoWork.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grBoxInfoWork.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grBoxInfoWork.Location = new System.Drawing.Point(10, 342);
+            this.grBoxInfoWork.Name = "grBoxInfoWork";
+            this.grBoxInfoWork.Size = new System.Drawing.Size(413, 422);
+            this.grBoxInfoWork.TabIndex = 3;
+            this.grBoxInfoWork.TabStop = false;
+            this.grBoxInfoWork.Text = "Дані працівники";
             // 
             // txb11
             // 
@@ -368,15 +368,15 @@ namespace Bank
             this.працівникиBindingSource.DataMember = "Працівники";
             this.працівникиBindingSource.DataSource = this.bDDataSet;
             // 
-            // label12
+            // lab11
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(42, 267);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(88, 19);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "Відділення";
+            this.lab11.AutoSize = true;
+            this.lab11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab11.Location = new System.Drawing.Point(42, 267);
+            this.lab11.Name = "lab11";
+            this.lab11.Size = new System.Drawing.Size(88, 19);
+            this.lab11.TabIndex = 19;
+            this.lab11.Text = "Відділення";
             // 
             // txb12
             // 
@@ -386,15 +386,15 @@ namespace Bank
             this.txb12.Size = new System.Drawing.Size(176, 26);
             this.txb12.TabIndex = 18;
             // 
-            // label11
+            // lab12
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(42, 306);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 19);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Посада";
+            this.lab12.AutoSize = true;
+            this.lab12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab12.Location = new System.Drawing.Point(42, 306);
+            this.lab12.Name = "lab12";
+            this.lab12.Size = new System.Drawing.Size(60, 19);
+            this.lab12.TabIndex = 17;
+            this.lab12.Text = "Посада";
             // 
             // txb10
             // 
@@ -404,15 +404,15 @@ namespace Bank
             this.txb10.Size = new System.Drawing.Size(176, 26);
             this.txb10.TabIndex = 16;
             // 
-            // label10
+            // lab10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(42, 225);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 19);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Адрес";
+            this.lab10.AutoSize = true;
+            this.lab10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab10.Location = new System.Drawing.Point(42, 225);
+            this.lab10.Name = "lab10";
+            this.lab10.Size = new System.Drawing.Size(51, 19);
+            this.lab10.TabIndex = 15;
+            this.lab10.Text = "Адрес";
             // 
             // txb9
             // 
@@ -422,15 +422,15 @@ namespace Bank
             this.txb9.Size = new System.Drawing.Size(176, 26);
             this.txb9.TabIndex = 14;
             // 
-            // label9
+            // lab9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(39, 183);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 19);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Стать";
+            this.lab9.AutoSize = true;
+            this.lab9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab9.Location = new System.Drawing.Point(39, 183);
+            this.lab9.Name = "lab9";
+            this.lab9.Size = new System.Drawing.Size(52, 19);
+            this.lab9.TabIndex = 13;
+            this.lab9.Text = "Стать";
             // 
             // btnDelWork
             // 
@@ -514,58 +514,58 @@ namespace Bank
             this.txb5.Size = new System.Drawing.Size(176, 26);
             this.txb5.TabIndex = 4;
             // 
-            // label5
+            // lab8
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(39, 145);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 19);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Вік";
+            this.lab8.AutoSize = true;
+            this.lab8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab8.Location = new System.Drawing.Point(39, 145);
+            this.lab8.Name = "lab8";
+            this.lab8.Size = new System.Drawing.Size(33, 19);
+            this.lab8.TabIndex = 3;
+            this.lab8.Text = "Вік";
             // 
-            // label6
+            // lab7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(17, 108);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 19);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Дата народження";
+            this.lab7.AutoSize = true;
+            this.lab7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab7.Location = new System.Drawing.Point(17, 108);
+            this.lab7.Name = "lab7";
+            this.lab7.Size = new System.Drawing.Size(136, 19);
+            this.lab7.TabIndex = 2;
+            this.lab7.Text = "Дата народження";
             // 
-            // label7
+            // lab6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(39, 60);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 19);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "ПІБ";
+            this.lab6.AutoSize = true;
+            this.lab6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab6.Location = new System.Drawing.Point(39, 60);
+            this.lab6.Name = "lab6";
+            this.lab6.Size = new System.Drawing.Size(38, 19);
+            this.lab6.TabIndex = 1;
+            this.lab6.Text = "ПІБ";
             // 
-            // label8
+            // lab5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(42, 25);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(25, 19);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "№";
+            this.lab5.AutoSize = true;
+            this.lab5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lab5.Location = new System.Drawing.Point(42, 25);
+            this.lab5.Name = "lab5";
+            this.lab5.Size = new System.Drawing.Size(25, 19);
+            this.lab5.TabIndex = 0;
+            this.lab5.Text = "№";
             // 
-            // grb4
+            // grBoxWorkerGrid
             // 
-            this.grb4.BackColor = System.Drawing.Color.DarkOrange;
-            this.grb4.Controls.Add(this.працівникиDataGridView);
-            this.grb4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grb4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.grb4.Location = new System.Drawing.Point(429, 342);
-            this.grb4.Name = "grb4";
-            this.grb4.Size = new System.Drawing.Size(771, 393);
-            this.grb4.TabIndex = 2;
-            this.grb4.TabStop = false;
-            this.grb4.Text = "Праівники";
+            this.grBoxWorkerGrid.BackColor = System.Drawing.Color.DarkOrange;
+            this.grBoxWorkerGrid.Controls.Add(this.працівникиDataGridView);
+            this.grBoxWorkerGrid.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grBoxWorkerGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.grBoxWorkerGrid.Location = new System.Drawing.Point(429, 342);
+            this.grBoxWorkerGrid.Name = "grBoxWorkerGrid";
+            this.grBoxWorkerGrid.Size = new System.Drawing.Size(771, 393);
+            this.grBoxWorkerGrid.TabIndex = 2;
+            this.grBoxWorkerGrid.TabStop = false;
+            this.grBoxWorkerGrid.Text = "Праівники";
             // 
             // працівникиDataGridView
             // 
@@ -641,7 +641,7 @@ namespace Bank
             // txbSearchWorker
             // 
             this.txbSearchWorker.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txbSearchWorker.Location = new System.Drawing.Point(669, 747);
+            this.txbSearchWorker.Location = new System.Drawing.Point(798, 745);
             this.txbSearchWorker.Multiline = true;
             this.txbSearchWorker.Name = "txbSearchWorker";
             this.txbSearchWorker.Size = new System.Drawing.Size(303, 29);
@@ -650,27 +650,27 @@ namespace Bank
             // txbSearchOtd
             // 
             this.txbSearchOtd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txbSearchOtd.Location = new System.Drawing.Point(678, 296);
+            this.txbSearchOtd.Location = new System.Drawing.Point(719, 301);
             this.txbSearchOtd.Multiline = true;
             this.txbSearchOtd.Name = "txbSearchOtd";
             this.txbSearchOtd.Size = new System.Drawing.Size(303, 30);
             this.txbSearchOtd.TabIndex = 24;
             // 
-            // WRefresh
+            // RefreshOtd
             // 
-            this.WRefresh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.WRefresh.Location = new System.Drawing.Point(429, 298);
-            this.WRefresh.Name = "WRefresh";
-            this.WRefresh.Size = new System.Drawing.Size(95, 28);
-            this.WRefresh.TabIndex = 26;
-            this.WRefresh.Text = "Оновити";
-            this.WRefresh.UseVisualStyleBackColor = true;
-            this.WRefresh.Click += new System.EventHandler(this.Refresh_Click);
+            this.RefreshOtd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RefreshOtd.Location = new System.Drawing.Point(429, 298);
+            this.RefreshOtd.Name = "RefreshOtd";
+            this.RefreshOtd.Size = new System.Drawing.Size(169, 28);
+            this.RefreshOtd.TabIndex = 26;
+            this.RefreshOtd.Text = "Оновити відділеня";
+            this.RefreshOtd.UseVisualStyleBackColor = true;
+            this.RefreshOtd.Click += new System.EventHandler(this.RefreshOtd_Click);
             // 
             // btnSearchOtd
             // 
             this.btnSearchOtd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchOtd.Location = new System.Drawing.Point(541, 296);
+            this.btnSearchOtd.Location = new System.Drawing.Point(604, 298);
             this.btnSearchOtd.Name = "btnSearchOtd";
             this.btnSearchOtd.Size = new System.Drawing.Size(83, 32);
             this.btnSearchOtd.TabIndex = 27;
@@ -683,16 +683,16 @@ namespace Bank
             this.btnRefreshWorker.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnRefreshWorker.Location = new System.Drawing.Point(439, 744);
             this.btnRefreshWorker.Name = "btnRefreshWorker";
-            this.btnRefreshWorker.Size = new System.Drawing.Size(112, 28);
+            this.btnRefreshWorker.Size = new System.Drawing.Size(206, 29);
             this.btnRefreshWorker.TabIndex = 28;
-            this.btnRefreshWorker.Text = "Оновити";
+            this.btnRefreshWorker.Text = "Оновити працівників";
             this.btnRefreshWorker.UseVisualStyleBackColor = true;
             this.btnRefreshWorker.Click += new System.EventHandler(this.btnRefreshWorker_Click);
             // 
             // btnSearchWorker
             // 
             this.btnSearchWorker.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSearchWorker.Location = new System.Drawing.Point(557, 742);
+            this.btnSearchWorker.Location = new System.Drawing.Point(672, 745);
             this.btnSearchWorker.Name = "btnSearchWorker";
             this.btnSearchWorker.Size = new System.Drawing.Size(83, 30);
             this.btnSearchWorker.TabIndex = 29;
@@ -720,7 +720,7 @@ namespace Bank
             this.кліентиToolStripMenuItem.Name = "кліентиToolStripMenuItem";
             this.кліентиToolStripMenuItem.Size = new System.Drawing.Size(76, 25);
             this.кліентиToolStripMenuItem.Text = "Кліенти";
-            this.кліентиToolStripMenuItem.Click += new System.EventHandler(this.кліентиToolStripMenuItem_Click);
+            this.кліентиToolStripMenuItem.Click += new System.EventHandler(this.кліентиToolStripMenuItem_Click_1);
             // 
             // вихідToolStripMenuItem
             // 
@@ -730,16 +730,16 @@ namespace Bank
             this.вихідToolStripMenuItem.Text = "Вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
-            // ms1
+            // msBank
             // 
-            this.ms1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msBank.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.кліентиToolStripMenuItem,
             this.вихідToolStripMenuItem});
-            this.ms1.Location = new System.Drawing.Point(0, 0);
-            this.ms1.Name = "ms1";
-            this.ms1.Size = new System.Drawing.Size(1219, 29);
-            this.ms1.TabIndex = 2;
-            this.ms1.Text = "menuStrip1";
+            this.msBank.Location = new System.Drawing.Point(0, 0);
+            this.msBank.Name = "msBank";
+            this.msBank.Size = new System.Drawing.Size(1219, 29);
+            this.msBank.TabIndex = 2;
+            this.msBank.Text = "menuStrip1";
             // 
             // працівникиTableAdapter
             // 
@@ -760,33 +760,33 @@ namespace Bank
             this.Controls.Add(this.btnSearchWorker);
             this.Controls.Add(this.btnRefreshWorker);
             this.Controls.Add(this.btnSearchOtd);
-            this.Controls.Add(this.WRefresh);
+            this.Controls.Add(this.RefreshOtd);
             this.Controls.Add(this.txbSearchOtd);
             this.Controls.Add(this.txbSearchWorker);
-            this.Controls.Add(this.grb4);
-            this.Controls.Add(this.grb3);
-            this.Controls.Add(this.grb2);
-            this.Controls.Add(this.grb1);
-            this.Controls.Add(this.ms1);
-            this.MainMenuStrip = this.ms1;
+            this.Controls.Add(this.grBoxWorkerGrid);
+            this.Controls.Add(this.grBoxInfoWork);
+            this.Controls.Add(this.grBoxOtdGrid);
+            this.Controls.Add(this.grboxInfOtd);
+            this.Controls.Add(this.msBank);
+            this.MainMenuStrip = this.msBank;
             this.MaximumSize = new System.Drawing.Size(1252, 374);
             this.Name = "fBank";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Банк";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.grb1.ResumeLayout(false);
-            this.grb1.PerformLayout();
+            this.Load += new System.EventHandler(this.fBank_Load);
+            this.grboxInfOtd.ResumeLayout(false);
+            this.grboxInfOtd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).EndInit();
-            this.grb2.ResumeLayout(false);
+            this.grBoxOtdGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.відділеняDataGridView)).EndInit();
-            this.grb3.ResumeLayout(false);
-            this.grb3.PerformLayout();
+            this.grBoxInfoWork.ResumeLayout(false);
+            this.grBoxInfoWork.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.працівникиBindingSource)).EndInit();
-            this.grb4.ResumeLayout(false);
+            this.grBoxWorkerGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).EndInit();
-            this.ms1.ResumeLayout(false);
-            this.ms1.PerformLayout();
+            this.msBank.ResumeLayout(false);
+            this.msBank.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -795,23 +795,23 @@ namespace Bank
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grb1;
-        private System.Windows.Forms.GroupBox grb2;
+        private System.Windows.Forms.GroupBox grboxInfOtd;
+        private System.Windows.Forms.GroupBox grBoxOtdGrid;
         private System.Windows.Forms.Button btDelOtd;
-        private System.Windows.Forms.Button btUpdate;
-        private System.Windows.Forms.Button btNext;
+        private System.Windows.Forms.Button btUpdateOtd;
+        private System.Windows.Forms.Button btNextOtd;
         private System.Windows.Forms.Button btAddOtd;
-        private System.Windows.Forms.Button btPrev;
+        private System.Windows.Forms.Button btPrevOtd;
         private System.Windows.Forms.TextBox txb4;
         private System.Windows.Forms.TextBox txb3;
         private System.Windows.Forms.TextBox txb2;
         private System.Windows.Forms.TextBox txb1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lab4;
+        private System.Windows.Forms.Label lab3;
+        private System.Windows.Forms.Label lab2;
+        private System.Windows.Forms.Label lab1;
       
-        private System.Windows.Forms.GroupBox grb3;
+        private System.Windows.Forms.GroupBox grBoxInfoWork;
         private System.Windows.Forms.Button btnDelWork;
         private System.Windows.Forms.Button btnUpdateWork;
         private System.Windows.Forms.Button btnNextWork;
@@ -821,23 +821,23 @@ namespace Bank
         private System.Windows.Forms.TextBox txb7;
         private System.Windows.Forms.TextBox txb6;
         private System.Windows.Forms.TextBox txb5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox grb4;
+        private System.Windows.Forms.Label lab8;
+        private System.Windows.Forms.Label lab7;
+        private System.Windows.Forms.Label lab6;
+        private System.Windows.Forms.Label lab5;
+        private System.Windows.Forms.GroupBox grBoxWorkerGrid;
         private System.Windows.Forms.TextBox txb11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lab11;
         private System.Windows.Forms.TextBox txb12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lab12;
         private System.Windows.Forms.TextBox txb10;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lab10;
         private System.Windows.Forms.TextBox txb9;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lab9;
 
         private System.Windows.Forms.TextBox txbSearchWorker;
         private System.Windows.Forms.TextBox txbSearchOtd;
-        private System.Windows.Forms.Button WRefresh;
+        private System.Windows.Forms.Button RefreshOtd;
         private System.Windows.Forms.Button btnSearchOtd;
         private System.Windows.Forms.Button btnRefreshWorker;
         private System.Windows.Forms.Button btnSearchWorker;
@@ -855,7 +855,7 @@ namespace Bank
         private BDDataSetTableAdapters.ВідділеняTableAdapter відділеняTableAdapter;
         private System.Windows.Forms.ToolStripMenuItem кліентиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вихідToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip ms1;
+        private System.Windows.Forms.MenuStrip msBank;
         private BDDataSetTableAdapters.ПрацівникиTableAdapter працівникиTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;

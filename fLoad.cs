@@ -16,5 +16,10 @@ namespace Bank
         {
             InitializeComponent();
         }
+
+        private void fLoad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,40 +29,40 @@ namespace Bank
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pgBarLoad = new System.Windows.Forms.ProgressBar();
+            this.lbName = new System.Windows.Forms.Label();
+            this.PicLoad = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLoad)).BeginInit();
             this.SuspendLayout();
             // 
-            // progressBar1
+            // pgBarLoad
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 349);
-            this.progressBar1.MarqueeAnimationSpeed = 50;
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(566, 22);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar1.TabIndex = 1;
+            this.pgBarLoad.Location = new System.Drawing.Point(12, 349);
+            this.pgBarLoad.MarqueeAnimationSpeed = 50;
+            this.pgBarLoad.Name = "pgBarLoad";
+            this.pgBarLoad.Size = new System.Drawing.Size(566, 22);
+            this.pgBarLoad.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.pgBarLoad.TabIndex = 1;
             // 
-            // label1
+            // lbName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(104, 230);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 73);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Access Bank";
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbName.Location = new System.Drawing.Point(104, 230);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(373, 73);
+            this.lbName.TabIndex = 2;
+            this.lbName.Text = "Access Bank";
             // 
-            // pictureBox1
+            // PicLoad
             // 
-            this.pictureBox1.Image = global::Bank.Properties.Resources.pic;
-            this.pictureBox1.Location = new System.Drawing.Point(176, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(236, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.PicLoad.Image = global::Bank.Properties.Resources.pic;
+            this.PicLoad.Location = new System.Drawing.Point(176, 27);
+            this.PicLoad.Name = "PicLoad";
+            this.PicLoad.Size = new System.Drawing.Size(236, 200);
+            this.PicLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicLoad.TabIndex = 3;
+            this.PicLoad.TabStop = false;
             // 
             // fLoad
             // 
@@ -70,23 +70,24 @@ namespace Bank
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(590, 399);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.PicLoad);
+            this.Controls.Add(this.lbName);
+            this.Controls.Add(this.pgBarLoad);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLoad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fLoad";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.fLoad_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PicLoad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ProgressBar pgBarLoad;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.PictureBox PicLoad;
     }
 }

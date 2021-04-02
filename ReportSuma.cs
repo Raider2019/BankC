@@ -10,21 +10,20 @@ namespace Bank
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void ReportSuma_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet1.Sum". При необходимости она может быть перемещена или удалена.
-            this.sumTableAdapter1.Fill(this.bDDataSet1.Sum);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bDDataSet.Sum". При необходимости она может быть перемещена или удалена.
+            this.sumTableAdapter.Fill(this.bDDataSet.Sum);
 
-
-            this.Rep1.RefreshReport();
-            this.Rep1.RefreshReport();
         }
-
         private void кліентиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fClients f = new fClients();
             f.Show();
             this.Hide();
         }
+
+       
     }
 }
