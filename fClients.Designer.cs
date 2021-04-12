@@ -664,7 +664,7 @@ namespace Bank
             // txSearchCli
             // 
             this.txSearchCli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txSearchCli.Location = new System.Drawing.Point(661, 267);
+            this.txSearchCli.Location = new System.Drawing.Point(697, 265);
             this.txSearchCli.Name = "txSearchCli";
             this.txSearchCli.Size = new System.Drawing.Size(374, 26);
             this.txSearchCli.TabIndex = 15;
@@ -674,9 +674,9 @@ namespace Bank
             this.btnSearhCli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSearhCli.Location = new System.Drawing.Point(556, 261);
             this.btnSearhCli.Name = "btnSearhCli";
-            this.btnSearhCli.Size = new System.Drawing.Size(99, 37);
+            this.btnSearhCli.Size = new System.Drawing.Size(125, 33);
             this.btnSearhCli.TabIndex = 16;
-            this.btnSearhCli.Text = "Пошук";
+            this.btnSearhCli.Text = "Пошук по ПІБ";
             this.btnSearhCli.UseVisualStyleBackColor = true;
             this.btnSearhCli.Click += new System.EventHandler(this.btnSearhCli_Click);
             // 
@@ -694,18 +694,18 @@ namespace Bank
             // btSearchVkl
             // 
             this.btSearchVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSearchVkl.Location = new System.Drawing.Point(514, 736);
+            this.btSearchVkl.Location = new System.Drawing.Point(586, 736);
             this.btSearchVkl.Name = "btSearchVkl";
-            this.btSearchVkl.Size = new System.Drawing.Size(93, 33);
+            this.btSearchVkl.Size = new System.Drawing.Size(152, 33);
             this.btSearchVkl.TabIndex = 18;
-            this.btSearchVkl.Text = "Пошук";
+            this.btSearchVkl.Text = "Пошук по місяцам";
             this.btSearchVkl.UseVisualStyleBackColor = true;
             this.btSearchVkl.Click += new System.EventHandler(this.btSearchVkl_Click);
             // 
             // txSearhVkl
             // 
             this.txSearhVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txSearhVkl.Location = new System.Drawing.Point(626, 736);
+            this.txSearhVkl.Location = new System.Drawing.Point(756, 741);
             this.txSearhVkl.Name = "txSearhVkl";
             this.txSearhVkl.Size = new System.Drawing.Size(361, 26);
             this.txSearhVkl.TabIndex = 19;
@@ -713,11 +713,11 @@ namespace Bank
             // btRefreshVkl
             // 
             this.btRefreshVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRefreshVkl.Location = new System.Drawing.Point(415, 736);
+            this.btRefreshVkl.Location = new System.Drawing.Point(398, 737);
             this.btRefreshVkl.Name = "btRefreshVkl";
-            this.btRefreshVkl.Size = new System.Drawing.Size(93, 33);
+            this.btRefreshVkl.Size = new System.Drawing.Size(182, 32);
             this.btRefreshVkl.TabIndex = 20;
-            this.btRefreshVkl.Text = "Оновити";
+            this.btRefreshVkl.Text = "Оновити працівників";
             this.btRefreshVkl.UseVisualStyleBackColor = true;
             this.btRefreshVkl.Click += new System.EventHandler(this.btRefreshVkl_Click);
             // 

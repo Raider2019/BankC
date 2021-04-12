@@ -97,7 +97,6 @@ namespace Bank
             this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msBank = new System.Windows.Forms.MenuStrip();
             this.працівникиTableAdapter = new Bank.BDDataSetTableAdapters.ПрацівникиTableAdapter();
-            this.bdDataSet1 = new Bank.BDDataSet();
             this.grboxInfOtd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.відділеняBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDDataSet)).BeginInit();
@@ -108,7 +107,6 @@ namespace Bank
             this.grBoxWorkerGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).BeginInit();
             this.msBank.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // grboxInfOtd
@@ -641,7 +639,7 @@ namespace Bank
             // txbSearchWorker
             // 
             this.txbSearchWorker.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txbSearchWorker.Location = new System.Drawing.Point(798, 745);
+            this.txbSearchWorker.Location = new System.Drawing.Point(802, 741);
             this.txbSearchWorker.Multiline = true;
             this.txbSearchWorker.Name = "txbSearchWorker";
             this.txbSearchWorker.Size = new System.Drawing.Size(303, 29);
@@ -650,7 +648,7 @@ namespace Bank
             // txbSearchOtd
             // 
             this.txbSearchOtd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txbSearchOtd.Location = new System.Drawing.Point(719, 301);
+            this.txbSearchOtd.Location = new System.Drawing.Point(762, 296);
             this.txbSearchOtd.Multiline = true;
             this.txbSearchOtd.Name = "txbSearchOtd";
             this.txbSearchOtd.Size = new System.Drawing.Size(303, 30);
@@ -672,16 +670,16 @@ namespace Bank
             this.btnSearchOtd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchOtd.Location = new System.Drawing.Point(604, 298);
             this.btnSearchOtd.Name = "btnSearchOtd";
-            this.btnSearchOtd.Size = new System.Drawing.Size(83, 32);
+            this.btnSearchOtd.Size = new System.Drawing.Size(152, 28);
             this.btnSearchOtd.TabIndex = 27;
-            this.btnSearchOtd.Text = "Пошук";
+            this.btnSearchOtd.Text = "Пошук по адресу";
             this.btnSearchOtd.UseVisualStyleBackColor = true;
             this.btnSearchOtd.Click += new System.EventHandler(this.btnSearchOtd_Click);
             // 
             // btnRefreshWorker
             // 
             this.btnRefreshWorker.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnRefreshWorker.Location = new System.Drawing.Point(439, 744);
+            this.btnRefreshWorker.Location = new System.Drawing.Point(439, 741);
             this.btnRefreshWorker.Name = "btnRefreshWorker";
             this.btnRefreshWorker.Size = new System.Drawing.Size(206, 29);
             this.btnRefreshWorker.TabIndex = 28;
@@ -692,11 +690,11 @@ namespace Bank
             // btnSearchWorker
             // 
             this.btnSearchWorker.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSearchWorker.Location = new System.Drawing.Point(672, 745);
+            this.btnSearchWorker.Location = new System.Drawing.Point(651, 742);
             this.btnSearchWorker.Name = "btnSearchWorker";
-            this.btnSearchWorker.Size = new System.Drawing.Size(83, 30);
+            this.btnSearchWorker.Size = new System.Drawing.Size(136, 28);
             this.btnSearchWorker.TabIndex = 29;
-            this.btnSearchWorker.Text = "Пошук";
+            this.btnSearchWorker.Text = "Пошук по ПІБ";
             this.btnSearchWorker.UseVisualStyleBackColor = true;
             this.btnSearchWorker.Click += new System.EventHandler(this.btnSearchWorker_Click);
             // 
@@ -745,11 +743,6 @@ namespace Bank
             // 
             this.працівникиTableAdapter.ClearBeforeFill = true;
             // 
-            // bdDataSet1
-            // 
-            this.bdDataSet1.DataSetName = "BDDataSet";
-            this.bdDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // fBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -787,7 +780,6 @@ namespace Bank
             ((System.ComponentModel.ISupportInitialize)(this.працівникиDataGridView)).EndInit();
             this.msBank.ResumeLayout(false);
             this.msBank.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bdDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -865,7 +857,6 @@ namespace Bank
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private BDDataSet bdDataSet1;
     }
 }
 
