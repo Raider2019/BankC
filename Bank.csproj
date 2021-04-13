@@ -121,10 +121,6 @@
     <None Include="BDDataSet.xss">
       <DependentUpon>BDDataSet.xsd</DependentUpon>
     </None>
-    <None Include="bin\Debug.7z" />
-    <None Include="bin\Debug\Bank.exe.config" />
-    <None Include="bin\Release.7z" />
-    <None Include="bin\Release\Bank.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,103 +134,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\SqlServerTypes\x64\" />
-    <Folder Include="bin\Debug\SqlServerTypes\x86\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="AccessBD\BD.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\AccessBD\BD.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Debug\Bank.exe" />
-    <Content Include="bin\Debug\Bank.pdb" />
-    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\EnvDTE.dll" />
-    <Content Include="bin\Debug\EnvDTE80.dll" />
-    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\Microsoft.Build.Framework.dll" />
-    <Content Include="bin\Debug\Microsoft.Build.Tasks.Core.dll" />
-    <Content Include="bin\Debug\Microsoft.Build.Utilities.Core.dll" />
-    <Content Include="bin\Debug\Microsoft.MSXML.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.DataVisualization.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.Design.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
-    <Content Include="bin\Debug\Microsoft.SqlServer.Types.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Data.Core.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Data.Services.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll" />
-    <Content Include="bin\Debug\Microsoft.VisualStudio.VSHelp.dll" />
-    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
-    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\ru\Microsoft.VisualStudio.Data.Core.resources.dll" />
-    <Content Include="bin\Debug\ru\Microsoft.VisualStudio.Data.Services.resources.dll" />
-    <Content Include="bin\Debug\SqlServerTypes\x64 - Копировать\msvcr120.dll" />
-    <Content Include="bin\Debug\SqlServerTypes\x64 - Копировать\SqlServerSpatial140.dll" />
-    <Content Include="bin\Debug\SqlServerTypes\x86 - Копировать\msvcr120.dll" />
-    <Content Include="bin\Debug\SqlServerTypes\x86 - Копировать\SqlServerSpatial140.dll" />
-    <Content Include="bin\Debug\stdole.dll" />
-    <Content Include="bin\Debug\VSLangProj.dll" />
-    <Content Include="bin\Debug\VSLangProj2.dll" />
-    <Content Include="bin\Debug\VSLangProj80.dll" />
-    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
-    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
-    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
-    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
-    <Content Include="bin\Release\AccessBD\BD.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bin\Release\Bank.exe" />
-    <Content Include="bin\Release\Bank.pdb" />
     <Content Include="Images\General.png" />
     <None Include="Images\Load.jpg" />
     <Content Include="Images\pic.png" />

@@ -538,14 +538,14 @@ namespace Bank
             this.gbInfoVkl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gbInfoVkl.Location = new System.Drawing.Point(12, 464);
             this.gbInfoVkl.Name = "gbInfoVkl";
-            this.gbInfoVkl.Size = new System.Drawing.Size(367, 326);
+            this.gbInfoVkl.Size = new System.Drawing.Size(367, 303);
             this.gbInfoVkl.TabIndex = 14;
             this.gbInfoVkl.TabStop = false;
             this.gbInfoVkl.Text = "Дані вкладів";
             // 
             // btDelVkl
             // 
-            this.btDelVkl.Location = new System.Drawing.Point(142, 291);
+            this.btDelVkl.Location = new System.Drawing.Point(148, 261);
             this.btDelVkl.Name = "btDelVkl";
             this.btDelVkl.Size = new System.Drawing.Size(89, 29);
             this.btDelVkl.TabIndex = 13;
@@ -555,7 +555,7 @@ namespace Bank
             // 
             // btUpdateVkl
             // 
-            this.btUpdateVkl.Location = new System.Drawing.Point(12, 291);
+            this.btUpdateVkl.Location = new System.Drawing.Point(18, 261);
             this.btUpdateVkl.Name = "btUpdateVkl";
             this.btUpdateVkl.Size = new System.Drawing.Size(103, 29);
             this.btUpdateVkl.TabIndex = 12;
@@ -565,7 +565,7 @@ namespace Bank
             // 
             // btNextVkl
             // 
-            this.btNextVkl.Location = new System.Drawing.Point(258, 233);
+            this.btNextVkl.Location = new System.Drawing.Point(264, 203);
             this.btNextVkl.Name = "btNextVkl";
             this.btNextVkl.Size = new System.Drawing.Size(96, 39);
             this.btNextVkl.TabIndex = 10;
@@ -575,7 +575,7 @@ namespace Bank
             // 
             // btAddVkl
             // 
-            this.btAddVkl.Location = new System.Drawing.Point(142, 233);
+            this.btAddVkl.Location = new System.Drawing.Point(148, 203);
             this.btAddVkl.Name = "btAddVkl";
             this.btAddVkl.Size = new System.Drawing.Size(89, 39);
             this.btAddVkl.TabIndex = 9;
@@ -585,7 +585,7 @@ namespace Bank
             // 
             // btPrevVkl
             // 
-            this.btPrevVkl.Location = new System.Drawing.Point(12, 233);
+            this.btPrevVkl.Location = new System.Drawing.Point(18, 203);
             this.btPrevVkl.Name = "btPrevVkl";
             this.btPrevVkl.Size = new System.Drawing.Size(103, 39);
             this.btPrevVkl.TabIndex = 8;
@@ -596,7 +596,7 @@ namespace Bank
             // txb13
             // 
             this.txb13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Відсоток", true));
-            this.txb13.Location = new System.Drawing.Point(191, 186);
+            this.txb13.Location = new System.Drawing.Point(197, 156);
             this.txb13.Name = "txb13";
             this.txb13.Size = new System.Drawing.Size(100, 26);
             this.txb13.TabIndex = 7;
@@ -604,7 +604,7 @@ namespace Bank
             // txb12
             // 
             this.txb12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Термін_вкладу_дні", true));
-            this.txb12.Location = new System.Drawing.Point(191, 141);
+            this.txb12.Location = new System.Drawing.Point(197, 115);
             this.txb12.Name = "txb12";
             this.txb12.Size = new System.Drawing.Size(100, 26);
             this.txb12.TabIndex = 6;
@@ -612,7 +612,7 @@ namespace Bank
             // txb11
             // 
             this.txb11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "Термін_вкладу_місяці", true));
-            this.txb11.Location = new System.Drawing.Point(144, 109);
+            this.txb11.Location = new System.Drawing.Point(197, 79);
             this.txb11.Name = "txb11";
             this.txb11.Size = new System.Drawing.Size(100, 26);
             this.txb11.TabIndex = 5;
@@ -620,7 +620,7 @@ namespace Bank
             // txb10
             // 
             this.txb10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.вкладиBindingSource, "№_вклада", true));
-            this.txb10.Location = new System.Drawing.Point(115, 63);
+            this.txb10.Location = new System.Drawing.Point(121, 33);
             this.txb10.Name = "txb10";
             this.txb10.Size = new System.Drawing.Size(100, 26);
             this.txb10.TabIndex = 4;
@@ -628,7 +628,7 @@ namespace Bank
             // lab25
             // 
             this.lab25.AutoSize = true;
-            this.lab25.Location = new System.Drawing.Point(23, 189);
+            this.lab25.Location = new System.Drawing.Point(20, 122);
             this.lab25.Name = "lab25";
             this.lab25.Size = new System.Drawing.Size(138, 19);
             this.lab25.TabIndex = 3;
@@ -637,7 +637,7 @@ namespace Bank
             // lab24
             // 
             this.lab24.AutoSize = true;
-            this.lab24.Location = new System.Drawing.Point(24, 144);
+            this.lab24.Location = new System.Drawing.Point(20, 86);
             this.lab24.Name = "lab24";
             this.lab24.Size = new System.Drawing.Size(161, 19);
             this.lab24.TabIndex = 2;
@@ -646,7 +646,7 @@ namespace Bank
             // lab23
             // 
             this.lab23.AutoSize = true;
-            this.lab23.Location = new System.Drawing.Point(24, 116);
+            this.lab23.Location = new System.Drawing.Point(29, 156);
             this.lab23.Name = "lab23";
             this.lab23.Size = new System.Drawing.Size(72, 19);
             this.lab23.TabIndex = 1;
@@ -655,7 +655,7 @@ namespace Bank
             // lab22
             // 
             this.lab22.AutoSize = true;
-            this.lab22.Location = new System.Drawing.Point(23, 70);
+            this.lab22.Location = new System.Drawing.Point(29, 40);
             this.lab22.Name = "lab22";
             this.lab22.Size = new System.Drawing.Size(80, 19);
             this.lab22.TabIndex = 0;
